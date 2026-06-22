@@ -9,6 +9,7 @@ import { buildCompareShareUrl } from '../lib/shareUrl';
 import { parseArrayParam } from '../lib/urls';
 import { useCompareLeftStore, useCompareRightStore } from '../engine/compareStores';
 import { usePlaybackKeyboard } from '../hooks/usePlaybackKeyboard';
+import { useComposedScene, useCurrentStep } from '../hooks/useComposedScene';
 import { PlaybackControls } from './PlaybackControls';
 import { SceneRenderer } from '../visualizers/SceneRenderer';
 import { Legend } from './Legend';
@@ -41,8 +42,8 @@ function ComparePane({
   const { t } = useTranslation(['common', 'steps']);
   const entry = getCatalogEntry(algoId);
   const load = useStore((s) => s.load);
-  const scene = useStore((s) => s.getScene());
-  const currentStep = useStore((s) => s.getCurrentStep());
+  const scene = useComposedScene(useStore);
+  const currentStep = useCurrentStep(useStore);
 
   useEffect(() => {
     const initial = demo.buildInitialScene(input);

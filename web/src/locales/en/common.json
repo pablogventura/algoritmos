@@ -33,6 +33,7 @@
   "compareSync": "Sync playback",
   "compareHint": "Pick two algorithms and share the URL with your class.",
   "compareUnavailable": "Could not load one or both demos.",
+  "demoUnavailable": "Demo could not be loaded.",
   "plannedTitle": "Visual demo coming soon",
   "plannedBody": "This algorithm will use: {{metaphor}}",
   "complexity": "Complexity",

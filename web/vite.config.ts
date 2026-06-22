@@ -29,7 +29,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,woff2,png,webp}'],
-        navigateFallback: '/index.html',
+        navigateFallback: `${(process.env.VITE_BASE_PATH ?? '/algoritmos/').replace(/\/?$/, '/')}index.html`,
       },
     }),
   ],

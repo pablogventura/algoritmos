@@ -9,6 +9,7 @@ import { buildAlgoShareUrl } from '../lib/shareUrl';
 import { downloadBlob, exportSceneGif, sampleStepIndices } from '../lib/exportGif';
 import { parseArrayParam } from '../lib/urls';
 import { usePlaybackKeyboard } from '../hooks/usePlaybackKeyboard';
+import { useComposedScene } from '../hooks/useComposedScene';
 import { MainPlaybackControls } from './MainPlaybackControls';
 import { StepCaptionPanel } from './StepCaptionPanel';
 import { ProgressStrip } from './ProgressStrip';
@@ -23,13 +24,16 @@ interface AlgorithmPlaygroundProps {
 export function AlgorithmPlayground({ entry }: AlgorithmPlaygroundProps) {
   const { t } = useTranslation(['common', 'algorithms']);
   const [searchParams] = useSearchParams();
+  const dataParam = searchParams.get('data');
+  const targetParam = searchParams.get('target');
+  const stepParam = searchParams.get('step');
   const [demo, setDemo] = useState<AlgorithmDemo<DemoInput, unknown> | null>(null);
   const [demoLoading, setDemoLoading] = useState(true);
   const load = usePlaybackStore((s) => s.load);
   const goTo = usePlaybackStore((s) => s.goTo);
   const steps = usePlaybackStore((s) => s.steps);
   const speedMs = usePlaybackStore((s) => s.speedMs);
-  const scene = usePlaybackStore((s) => s.getScene());
+  const scene = useComposedScene(usePlaybackStore);
   const [testResults, setTestResults] = useState<ReturnType<typeof runTestCases> | null>(null);
   const [copied, setCopied] = useState(false);
   const [exporting, setExporting] = useState(false);
@@ -55,32 +59,30 @@ export function AlgorithmPlayground({ entry }: AlgorithmPlaygroundProps) {
     if (input) return input;
     if (!demo) return null;
     const base = { ...(demo.defaultInput as DemoInput) };
-    const dataParam = searchParams.get('data');
     if (dataParam && 'values' in base) {
       base.values = parseArrayParam(dataParam, (base.values as number[]) ?? []);
     }
-    const targetParam = searchParams.get('target');
     if (targetParam && 'target' in demo.defaultInput) {
       const target = Number(targetParam);
       if (!Number.isNaN(target)) base.target = target;
     }
     return base;
-  }, [demo, input, searchParams]);
+  }, [demo, input, dataParam, targetParam]);
 
   useEffect(() => {
     if (!demo || !resolvedInput) return;
     const initial = demo.buildInitialScene(resolvedInput);
     const demoSteps = demo.generateSteps(resolvedInput);
     load(initial, demoSteps);
+  }, [demo, load, resolvedInput]);
 
-    const stepParam = searchParams.get('step');
-    if (stepParam) {
-      const stepIndex = Number(stepParam);
-      if (!Number.isNaN(stepIndex) && stepIndex >= 0) {
-        requestAnimationFrame(() => goTo(stepIndex));
-      }
+  useEffect(() => {
+    if (!stepParam || steps.length === 0) return;
+    const stepIndex = Number(stepParam);
+    if (!Number.isNaN(stepIndex) && stepIndex >= 0) {
+      goTo(Math.min(stepIndex, steps.length - 1));
     }
-  }, [demo, goTo, load, resolvedInput, searchParams]);
+  }, [goTo, stepParam, steps.length]);
 
   const problemText = useMemo(() => {
     const specific = t(`${entry.id}.problem`, { ns: 'algorithms', defaultValue: '' });
@@ -92,7 +94,9 @@ export function AlgorithmPlayground({ entry }: AlgorithmPlaygroundProps) {
     return <p className="text-slate-400">{t('loadingDemo')}</p>;
   }
 
-  if (!demo) return null;
+  if (!demo) {
+    return <p className="text-red-400">{t('demoUnavailable')}</p>;
+  }
 
   const runTests = () => setTestResults(runTestCases(demo));
   const passed = testResults?.filter((r) => r.passed).length ?? 0;

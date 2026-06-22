@@ -4,12 +4,12 @@ import { HIGHLIGHT_COLORS } from '../visualizers/shared/colors';
 const LEGEND_KEYS = ['compare', 'active', 'sorted', 'found', 'pivot', 'visited', 'frontier', 'path', 'mst'];
 
 export function Legend() {
-  const { t } = useTranslation('legend');
+  const { t } = useTranslation(['legend', 'common']);
 
   return (
     <aside className="rounded-xl border border-slate-700/60 bg-slate-900/50 p-3">
       <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">
-        {t('common.legend')}
+        {t('legend', { ns: 'common' })}
       </h3>
       <ul className="space-y-1.5">
         {LEGEND_KEYS.map((key) => (
@@ -18,7 +18,7 @@ export function Legend() {
               className="h-3 w-3 shrink-0 rounded-sm"
               style={{ backgroundColor: HIGHLIGHT_COLORS[key] }}
             />
-            {t(`legend.${key}`)}
+            {t(key)}
           </li>
         ))}
       </ul>

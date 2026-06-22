@@ -33,6 +33,7 @@
   "compareSync": "Sincronizar reproducción",
   "compareHint": "Elegí dos algoritmos y compartí la URL con tu clase.",
   "compareUnavailable": "No se pudieron cargar una o ambas demos.",
+  "demoUnavailable": "No se pudo cargar la demo.",
   "plannedTitle": "Demo visual próximamente",
   "plannedBody": "Este algoritmo usará: {{metaphor}}",
   "complexity": "Complejidad",

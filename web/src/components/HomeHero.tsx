@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { quicksortDemo } from '../algorithms/sorting/quicksort';
 import { usePlaybackStore } from '../engine/playbackStore';
+import { useComposedScene } from '../hooks/useComposedScene';
 import { ArrayBars } from '../visualizers/ArrayBars/ArrayBars';
 
 export function HomeHero() {
@@ -12,7 +13,7 @@ export function HomeHero() {
   const currentIndex = usePlaybackStore((s) => s.currentIndex);
   const isPlaying = usePlaybackStore((s) => s.isPlaying);
   const steps = usePlaybackStore((s) => s.steps);
-  const scene = usePlaybackStore((s) => s.getScene());
+  const scene = useComposedScene(usePlaybackStore);
 
   useEffect(() => {
     const initial = quicksortDemo.buildInitialScene(quicksortDemo.defaultInput);

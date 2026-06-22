@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { usePlaybackStore } from '../engine/playbackStore';
+import { useCurrentStep } from '../hooks/useComposedScene';
 
 export function StepCaptionPanel() {
   const { t } = useTranslation(['playback', 'steps']);
-  const step = usePlaybackStore((s) => s.getCurrentStep());
+  const step = useCurrentStep(usePlaybackStore);
   const currentIndex = usePlaybackStore((s) => s.currentIndex);
   const total = usePlaybackStore((s) => s.steps.length);
 
