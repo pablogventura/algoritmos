@@ -1,6 +1,6 @@
 # Algoritmos
 
-Visual algorithm playground published on GitHub Pages. **268 interactive demos** from the corpus in `docs/` (31 handcrafted step-by-step animations + 237 bulk demos by visual family). Sorting area is **100% handcrafted**.
+Visual algorithm playground published on GitHub Pages. **268 interactive demos** from the corpus in `docs/` (**109 handcrafted** step-by-step animations + **159 bulk** demos by visual family). Sorting, graphs, data structures, and strings areas use handcrafted demos.
 
 ## Structure
 

@@ -18,7 +18,10 @@ import {
   unionFindDemo,
 } from '../graphs/moreGraphs';
 import { REST_GRAPH_DEMOS } from '../graphs/restGraphs';
+import { GRAPH_BATCH2_DEMOS } from '../graphs/graphBatch2';
 import { REST_SORTING_DEMOS } from '../sorting/restSorting';
+import { DATA_STRUCTURE_DEMOS } from '../structures/dataStructures';
+import { STRING_BATCH_DEMOS } from '../strings/stringBatch';
 import type { AlgorithmDemo } from '../../types/demo';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -40,6 +43,9 @@ export const HANDCRAFTED_DEMOS: Record<string, AlgorithmDemo<any, any>> = {
   'union-find-disjoint-set-union': unionFindDemo,
   ...REST_SORTING_DEMOS,
   ...REST_GRAPH_DEMOS,
+  ...GRAPH_BATCH2_DEMOS,
+  ...DATA_STRUCTURE_DEMOS,
+  ...STRING_BATCH_DEMOS,
 };
 
 export const HANDCRAFTED_IDS = new Set(Object.keys(HANDCRAFTED_DEMOS));
