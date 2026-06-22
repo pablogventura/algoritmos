@@ -17,6 +17,8 @@ import {
   topologicalSortDemo,
   unionFindDemo,
 } from '../graphs/moreGraphs';
+import { REST_GRAPH_DEMOS } from '../graphs/restGraphs';
+import { REST_SORTING_DEMOS } from '../sorting/restSorting';
 import type { AlgorithmDemo } from '../../types/demo';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -36,6 +38,8 @@ export const HANDCRAFTED_DEMOS: Record<string, AlgorithmDemo<any, any>> = {
   'bellman-ford': bellmanFordDemo,
   'orden-topologico': topologicalSortDemo,
   'union-find-disjoint-set-union': unionFindDemo,
+  ...REST_SORTING_DEMOS,
+  ...REST_GRAPH_DEMOS,
 };
 
 export const HANDCRAFTED_IDS = new Set(Object.keys(HANDCRAFTED_DEMOS));

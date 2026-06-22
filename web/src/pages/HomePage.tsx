@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { AREAS } from '../catalog/areas';
 import { CATALOG, countByStatus } from '../catalog';
 import { StatusBadge } from '../components/StatusBadge';
+import { HomeHero } from '../components/HomeHero';
 
 export function HomePage() {
   const { t } = useTranslation(['common', 'areas']);
@@ -27,6 +28,9 @@ export function HomePage() {
         </h1>
         <p className="mt-2 text-slate-400">{t('tagline')}</p>
         <p className="mt-4 text-sm text-sky-400">{t('progress', { ready, total })}</p>
+        <div className="mx-auto mt-6 max-w-2xl">
+          <HomeHero />
+        </div>
         <div className="mx-auto mt-6 max-w-md">
           <input
             type="search"

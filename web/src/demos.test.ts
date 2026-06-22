@@ -36,9 +36,11 @@ describe('algorithm demos', () => {
           }
         });
       } else {
-        it('passes default smoke test', () => {
+        it('passes bulk test cases', () => {
           const results = runTestCases(demo as AlgorithmDemo<unknown, unknown>);
-          expect(results[0]?.passed).toBe(true);
+          for (const r of results) {
+            expect(r.passed, r.name).toBe(true);
+          }
         });
       }
     });

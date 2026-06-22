@@ -213,5 +213,17 @@ export function runAlgorithm(entry: CatalogEntry, input: DemoInput): unknown {
 
 export function defaultTestCases(entry: CatalogEntry, input: DemoInput) {
   const expected = runAlgorithm(entry, input);
-  return [{ name: 'default', input, expected }];
+  const reversed =
+    'values' in input && Array.isArray((input as { values: number[] }).values)
+      ? { values: [...(input as { values: number[] }).values].reverse() }
+      : input;
+  const sorted =
+    'values' in input && Array.isArray((input as { values: number[] }).values)
+      ? { values: [...(input as { values: number[] }).values].sort((a, b) => a - b) }
+      : input;
+  return [
+    { name: 'default', input, expected },
+    { name: 'variant-a', input: reversed as DemoInput, expected: runAlgorithm(entry, reversed as DemoInput) },
+    { name: 'variant-b', input: sorted as DemoInput, expected: runAlgorithm(entry, sorted as DemoInput) },
+  ];
 }

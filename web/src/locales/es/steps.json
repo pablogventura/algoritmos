@@ -98,6 +98,104 @@
     "skip": "Ya en el mismo conjunto; omitir {{from}}—{{to}}",
     "done": "Componentes finales: {{components}}"
   },
+  "selectionSort": {
+    "start": "Selection sort sobre {{n}} elementos",
+    "select": "Buscar mínimo desde índice {{i}}",
+    "compare": "Comparar A[{{j}}]={{value}} con mínimo {{minValue}}",
+    "swap": "Intercambiar mínimo a posición {{i}}",
+    "placed": "Elemento en {{i}} en posición final",
+    "done": "Arreglo ordenado"
+  },
+  "radixSort": {
+    "start": "Radix sort sobre {{n}} elementos",
+    "digit": "Ordenar por dígito (exp={{exp}})",
+    "place": "Colocar valor {{value}} en bucket dígito {{digit}}",
+    "passDone": "Pase completo exp={{exp}}",
+    "done": "Arreglo ordenado"
+  },
+  "bucketSort": {
+    "start": "Bucket sort sobre {{n}} elementos",
+    "scatter": "Distribuir A[{{i}}] al bucket {{bucket}}",
+    "sortBucket": "Ordenar bucket {{bucket}}",
+    "done": "Buckets concatenados ordenados"
+  },
+  "introsort": {
+    "start": "Introsort sobre {{n}} elementos (profundidad {{depth}})",
+    "heapify": "Límite de profundidad; heap-sort [{{lo}}..{{hi}}]",
+    "done": "Arreglo ordenado"
+  },
+  "timsort": {
+    "start": "Timsort sobre {{n}} elementos",
+    "insertRun": "Insertar en run [{{start}}..{{end}}] en {{i}}",
+    "runDone": "Run [{{start}}..{{end}}] ordenado",
+    "done": "Arreglo ordenado"
+  },
+  "interpolationSearch": {
+    "start": "Búsqueda por interpolación de {{target}} en {{n}} elementos",
+    "probe": "Sondear índice {{mid}} (valor {{value}}) vs {{target}}",
+    "found": "Encontrado en índice {{mid}}",
+    "notFound": "Objetivo {{target}} no encontrado"
+  },
+  "exponentialSearch": {
+    "start": "Búsqueda exponencial de {{target}} en {{n}} elementos",
+    "expand": "Expandir límite a índice {{bound}} (valor {{value}})",
+    "binaryRange": "Búsqueda binaria en [{{lo}}..{{hi}}]",
+    "compare": "Comparar mid={{mid}} (valor {{value}}) con {{target}}",
+    "found": "Encontrado en índice {{index}}",
+    "notFound": "Objetivo {{target}} no encontrado"
+  },
+  "topK": {
+    "start": "Top {{k}} de {{n}} elementos con min-heap",
+    "consider": "Considerar A[{{i}}]={{value}}",
+    "replace": "Reemplazar mínimo del heap en {{minIdx}} por {{i}}",
+    "done": "Top {{k}}: {{values}}"
+  },
+  "medianOfMedians": {
+    "start": "Mediana de medianas en {{n}} elementos",
+    "group": "Mediana del grupo [{{start}}..{{end}}] es {{median}}",
+    "partition": "Particionar alrededor de pivote {{pivot}} (swap {{i}}, {{j}})",
+    "done": "Mediana es {{median}}"
+  },
+  "externalSort": {
+    "start": "Ordenamiento externo: {{n}} elementos, run {{blockSize}}",
+    "sortRun": "Ordenar run bloque {{block}} índice {{k}}",
+    "done": "Runs fusionados; arreglo ordenado"
+  },
+  "connectedComponents": {
+    "start": "Componentes conexas en {{n}} nodos",
+    "new": "BFS desde nodo no visitado {{start}}",
+    "visit": "Visitar nodo {{node}}",
+    "found": "Componente tamaño {{size}}: {{nodes}}",
+    "done": "Encontradas {{count}} componentes conexas"
+  },
+  "cycleDetection": {
+    "start": "Detectar ciclos con DFS",
+    "visit": "Visitar nodo {{node}}",
+    "backEdge": "Arista de retorno {{from}}→{{to}} forma ciclo",
+    "done": "Ciclo detectado: {{hasCycle}}"
+  },
+  "bidirectional": {
+    "start": "Búsqueda bidireccional de {{start}} a {{goal}}",
+    "forward": "Expandir frontera forward en {{node}}",
+    "backward": "Expandir frontera backward en {{node}}",
+    "done": "Camino: {{path}}"
+  },
+  "boruvka": {
+    "start": "Algoritmo de Borůvka (MST)",
+    "add": "Agregar arista {{from}}—{{to}} (peso {{weight}}); quedan {{components}} componentes",
+    "done": "Peso total MST {{totalWeight}}"
+  },
+  "fordFulkerson": {
+    "start": "Ford-Fulkerson flujo máximo {{source}}→{{sink}}",
+    "path": "Aumentar camino {{path}} en flujo {{flow}}",
+    "done": "Flujo máximo {{maxFlow}}"
+  },
+  "kosaraju": {
+    "start": "Kosaraju: componentes fuertemente conexas",
+    "finishOrder": "Orden de finalización: {{order}}",
+    "assign": "Asignar nodo {{node}} a SCC actual",
+    "done": "Encontradas {{count}} CFC"
+  },
   "generic": {
     "start": "Iniciando {{name}}",
     "arrayScan": "Procesar índice {{index}} (valor {{value}}) en {{name}}",

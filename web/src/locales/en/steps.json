@@ -98,6 +98,104 @@
     "skip": "Already same set; skip {{from}}—{{to}}",
     "done": "Final components: {{components}}"
   },
+  "selectionSort": {
+    "start": "Selection sort on {{n}} elements",
+    "select": "Find minimum in unsorted range from index {{i}}",
+    "compare": "Compare A[{{j}}]={{value}} with current min {{minValue}}",
+    "swap": "Swap minimum into position {{i}}",
+    "placed": "Element at {{i}} is in final position",
+    "done": "Array sorted"
+  },
+  "radixSort": {
+    "start": "Radix sort on {{n}} elements",
+    "digit": "Sort by digit place (exp={{exp}})",
+    "place": "Place value {{value}} in bucket for digit {{digit}}",
+    "passDone": "Pass complete for exp={{exp}}",
+    "done": "Array sorted"
+  },
+  "bucketSort": {
+    "start": "Bucket sort on {{n}} elements",
+    "scatter": "Scatter A[{{i}}] into bucket {{bucket}}",
+    "sortBucket": "Sort bucket {{bucket}} internally",
+    "done": "Concatenated buckets sorted"
+  },
+  "introsort": {
+    "start": "Introsort on {{n}} elements (max depth {{depth}})",
+    "heapify": "Depth limit reached; heap-sort range [{{lo}}..{{hi}}]",
+    "done": "Array sorted"
+  },
+  "timsort": {
+    "start": "Timsort on {{n}} elements",
+    "insertRun": "Insert into natural run [{{start}}..{{end}}] at {{i}}",
+    "runDone": "Run [{{start}}..{{end}}] sorted",
+    "done": "Array sorted"
+  },
+  "interpolationSearch": {
+    "start": "Interpolation search for {{target}} in {{n}} sorted elements",
+    "probe": "Probe index {{mid}} (value {{value}}) vs target {{target}}",
+    "found": "Found at index {{mid}}",
+    "notFound": "Target {{target}} not found"
+  },
+  "exponentialSearch": {
+    "start": "Exponential search for {{target}} in {{n}} sorted elements",
+    "expand": "Expand bound to index {{bound}} (value {{value}})",
+    "binaryRange": "Binary search in range [{{lo}}..{{hi}}]",
+    "compare": "Compare mid={{mid}} (value {{value}}) with {{target}}",
+    "found": "Found at index {{index}}",
+    "notFound": "Target {{target}} not found"
+  },
+  "topK": {
+    "start": "Find top {{k}} of {{n}} elements with min-heap",
+    "consider": "Consider A[{{i}}]={{value}}",
+    "replace": "Replace heap minimum at slot {{minIdx}} with {{i}}",
+    "done": "Top {{k}}: {{values}}"
+  },
+  "medianOfMedians": {
+    "start": "Median of medians on {{n}} elements",
+    "group": "Median of group [{{start}}..{{end}}] is {{median}}",
+    "partition": "Partition around pivot {{pivot}} (swap {{i}}, {{j}})",
+    "done": "Median is {{median}}"
+  },
+  "externalSort": {
+    "start": "External sort: {{n}} elements, run size {{blockSize}}",
+    "sortRun": "Sort run block {{block}} at index {{k}}",
+    "done": "All runs merged; array sorted"
+  },
+  "connectedComponents": {
+    "start": "Find connected components in {{n}} nodes",
+    "new": "Start BFS from unvisited node {{start}}",
+    "visit": "Visit node {{node}}",
+    "found": "Component of size {{size}}: {{nodes}}",
+    "done": "Found {{count}} connected components"
+  },
+  "cycleDetection": {
+    "start": "Detect cycles with DFS",
+    "visit": "Visit node {{node}}",
+    "backEdge": "Back edge {{from}}→{{to}} forms a cycle",
+    "done": "Cycle detected: {{hasCycle}}"
+  },
+  "bidirectional": {
+    "start": "Bidirectional search from {{start}} to {{goal}}",
+    "forward": "Expand forward frontier at {{node}}",
+    "backward": "Expand backward frontier at {{node}}",
+    "done": "Path found: {{path}}"
+  },
+  "boruvka": {
+    "start": "Borůvka MST algorithm",
+    "add": "Add edge {{from}}—{{to}} (weight {{weight}}); {{components}} components left",
+    "done": "MST total weight {{totalWeight}}"
+  },
+  "fordFulkerson": {
+    "start": "Ford-Fulkerson max flow from {{source}} to {{sink}}",
+    "path": "Augment path {{path}} by flow {{flow}}",
+    "done": "Maximum flow is {{maxFlow}}"
+  },
+  "kosaraju": {
+    "start": "Kosaraju strongly connected components",
+    "finishOrder": "Finish order: {{order}}",
+    "assign": "Assign node {{node}} to current SCC",
+    "done": "Found {{count}} strongly connected components"
+  },
   "generic": {
     "start": "Starting {{name}}",
     "arrayScan": "Process index {{index}} (value {{value}}) in {{name}}",
