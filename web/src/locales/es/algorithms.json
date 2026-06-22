@@ -1,20 +1,17 @@
 {
-  "binary-search": {
-    "problem": "Encontrar el índice de un valor objetivo en un arreglo ordenado."
-  },
-  "quicksort": {
-    "problem": "Ordenar un arreglo usando partición divide y vencerás."
-  },
-  "mergesort": {
-    "problem": "Ordenar un arreglo mezclando recursivamente mitades ordenadas."
-  },
-  "bfs": {
-    "problem": "Recorrer un grafo nivel por nivel desde un nodo inicial."
-  },
-  "dijkstra": {
-    "problem": "Calcular caminos mínimos desde una fuente en un grafo ponderado."
-  },
-  "prim": {
-    "problem": "Construir un árbol generador mínimo creciendo desde un nodo inicial."
-  }
+  "binary-search": { "problem": "Encontrar el índice de un valor en un arreglo ordenado." },
+  "linear-search-con-centinela": { "problem": "Encontrar un valor recorriendo el arreglo secuencialmente." },
+  "quicksort": { "problem": "Ordenar un arreglo con partición divide y vencerás." },
+  "mergesort": { "problem": "Ordenar mezclando recursivamente mitades ordenadas." },
+  "quickselect": { "problem": "Encontrar el k-ésimo menor en tiempo lineal esperado." },
+  "counting-sort": { "problem": "Ordenar enteros en rango acotado contando ocurrencias." },
+  "heapsort": { "problem": "Ordenar un arreglo usando un heap binario." },
+  "bfs": { "problem": "Recorrer un grafo nivel por nivel desde un nodo inicial." },
+  "dfs": { "problem": "Explorar un grafo en profundidad antes de retroceder." },
+  "dijkstra": { "problem": "Caminos mínimos desde una fuente en grafo ponderado." },
+  "prim": { "problem": "Construir un MST creciendo desde un nodo inicial." },
+  "kruskal": { "problem": "Construir un MST agregando aristas ligeras sin ciclos." },
+  "bellman-ford": { "problem": "Caminos mínimos con pesos negativos (sin ciclos negativos)." },
+  "orden-topologico": { "problem": "Orden lineal de un DAG respetando todas las aristas." },
+  "union-find-disjoint-set-union": { "problem": "Mantener conjuntos disjuntos con unión/búsqueda casi constante." }
 }

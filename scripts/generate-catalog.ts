@@ -32,11 +32,20 @@ interface CatalogEntry {
 
 const READY_IDS = new Set([
   'binary-search',
+  'linear-search-con-centinela',
   'quicksort',
   'mergesort',
+  'quickselect',
+  'counting-sort',
+  'heapsort',
   'bfs',
+  'dfs',
   'dijkstra',
   'prim',
+  'kruskal',
+  'bellman-ford',
+  'orden-topologico',
+  'union-find-disjoint-set-union',
 ]);
 
 const AREA_FAMILY: Record<string, VisualFamily> = {

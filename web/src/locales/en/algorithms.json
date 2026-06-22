@@ -1,20 +1,17 @@
 {
-  "binary-search": {
-    "problem": "Find the index of a target value in a sorted array."
-  },
-  "quicksort": {
-    "problem": "Sort an array using divide-and-conquer partitioning."
-  },
-  "mergesort": {
-    "problem": "Sort an array by recursively merging sorted halves."
-  },
-  "bfs": {
-    "problem": "Traverse a graph level by level from a start node."
-  },
-  "dijkstra": {
-    "problem": "Compute shortest paths from a source in a weighted graph."
-  },
-  "prim": {
-    "problem": "Build a minimum spanning tree by growing from a start node."
-  }
+  "binary-search": { "problem": "Find the index of a target value in a sorted array." },
+  "linear-search-con-centinela": { "problem": "Find a target by scanning the array sequentially." },
+  "quicksort": { "problem": "Sort an array using divide-and-conquer partitioning." },
+  "mergesort": { "problem": "Sort an array by recursively merging sorted halves." },
+  "quickselect": { "problem": "Find the k-th smallest element in expected linear time." },
+  "counting-sort": { "problem": "Sort integers in a bounded range by counting occurrences." },
+  "heapsort": { "problem": "Sort an array using a binary heap." },
+  "bfs": { "problem": "Traverse a graph level by level from a start node." },
+  "dfs": { "problem": "Explore a graph deeply before backtracking." },
+  "dijkstra": { "problem": "Compute shortest paths from a source in a weighted graph." },
+  "prim": { "problem": "Build a minimum spanning tree by growing from a start node." },
+  "kruskal": { "problem": "Build an MST by adding lightest edges that avoid cycles." },
+  "bellman-ford": { "problem": "Shortest paths with negative edge weights (no negative cycles)." },
+  "orden-topologico": { "problem": "Linear ordering of a DAG respecting all edges." },
+  "union-find-disjoint-set-union": { "problem": "Maintain disjoint sets with near-constant union/find." }
 }

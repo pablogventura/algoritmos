@@ -2,23 +2,49 @@
   "binarySearch": {
     "start": "Buscar objetivo {{target}} en {{n}} elementos ordenados",
     "compare": "Comparar mid={{mid}} (valor {{value}}) con objetivo {{target}}",
-    "found": "Objetivo encontrado en índice {{mid}} (valor {{value}})",
+    "found": "Objetivo en índice {{mid}} (valor {{value}})",
     "right": "Objetivo mayor; descartar izquierda, left ← {{nextLeft}}",
     "left": "Objetivo menor; descartar derecha, right ← {{nextRight}}",
     "notFound": "Objetivo {{target}} no encontrado"
+  },
+  "linearSearch": {
+    "start": "Búsqueda lineal de {{target}} en {{n}} elementos",
+    "compare": "Revisar índice {{i}}: valor {{value}} vs objetivo {{target}}",
+    "found": "Encontrado en índice {{i}}",
+    "notFound": "Objetivo {{target}} no encontrado"
+  },
+  "quickselect": {
+    "start": "Buscar elemento en rango {{k}} de {{n}} elementos",
+    "pivot": "Pivote valor {{value}}",
+    "compare": "Comparar A[{{j}}]={{value}} en partición",
+    "swap": "Intercambiar {{i}} y {{j}}",
+    "placed": "Pivote en {{index}} (valor {{value}})",
+    "done": "Elemento en rango {{k}} es {{value}}"
+  },
+  "countingSort": {
+    "start": "Counting sort sobre {{n}} elementos",
+    "count": "Incrementar conteo de {{value}} (count={{count}})",
+    "place": "Colocar {{value}} en salida",
+    "done": "Ordenamiento completo"
+  },
+  "heapsort": {
+    "start": "Heapsort sobre {{n}} elementos",
+    "heapify": "Heapify: intercambiar {{i}} con {{largest}}",
+    "extract": "Extraer máximo a índice {{end}} (valor {{value}})",
+    "done": "Arreglo ordenado"
   },
   "quicksort": {
     "start": "Quicksort sobre {{n}} elementos",
     "choosePivot": "Elegir pivote en índice {{index}} (valor {{value}})",
     "compare": "Comparar A[{{j}}]={{value}} con pivote {{pivot}}",
     "swap": "Intercambiar índices {{i}} y {{j}}",
-    "pivotPlaced": "Colocar pivote en índice {{index}} (valor {{value}})",
+    "pivotPlaced": "Pivote en índice {{index}} (valor {{value}})",
     "done": "Arreglo ordenado"
   },
   "mergesort": {
     "start": "Mergesort sobre {{n}} elementos",
-    "split": "Dividir rango [{{left}}..{{right}}] en mid={{mid}}",
-    "mergeStart": "Mezclar subarreglos [{{left}}..{{mid}}] y [{{mid}}+1..{{right}}]",
+    "split": "Dividir [{{left}}..{{right}}] en mid={{mid}}",
+    "mergeStart": "Mezclar [{{left}}..{{mid}}] y [{{mid}}+1..{{right}}]",
     "compare": "Comparar {{leftVal}} y {{rightVal}}",
     "merged": "Segmento mezclado [{{left}}..{{right}}]",
     "done": "Arreglo ordenado"
@@ -29,15 +55,47 @@
     "enqueue": "Encolar vecino {{to}} desde {{from}}",
     "done": "Orden BFS: {{order}}"
   },
+  "dfs": {
+    "start": "DFS desde nodo {{start}}",
+    "visit": "Visitar nodo {{node}}",
+    "push": "Apilar vecino {{to}} desde {{from}}",
+    "done": "Orden DFS: {{order}}"
+  },
   "dijkstra": {
     "start": "Dijkstra desde {{start}}",
     "select": "Seleccionar nodo {{node}} con distancia {{dist}}",
-    "relax": "Relajar arista {{from}}→{{to}} (w={{weight}}), nueva dist[{{to}}]={{newDist}}",
-    "done": "Distancias mínimas desde {{start}} calculadas"
+    "relax": "Relajar {{from}}→{{to}} (w={{weight}}), dist[{{to}}]={{newDist}}",
+    "done": "Distancias mínimas desde {{start}}"
   },
   "prim": {
     "start": "MST Prim desde {{start}}",
-    "addEdge": "Agregar arista {{from}}—{{to}} (peso {{weight}}) al MST",
-    "done": "MST completo, peso total {{totalWeight}}"
+    "addEdge": "Agregar arista {{from}}—{{to}} (peso {{weight}})",
+    "done": "MST completo, peso {{totalWeight}}"
+  },
+  "kruskal": {
+    "start": "Kruskal: ordenar aristas por peso",
+    "consider": "Considerar arista {{from}}—{{to}} (peso {{weight}})",
+    "add": "Agregar {{from}}—{{to}} al MST (peso {{weight}})",
+    "skip": "Omitir {{from}}—{{to}} (formaría ciclo)",
+    "done": "Peso MST {{totalWeight}}"
+  },
+  "bellmanFord": {
+    "start": "Bellman-Ford desde {{start}}",
+    "round": "Ronda de relajación {{round}}",
+    "relax": "Relajar {{from}}→{{to}} (w={{weight}}), dist[{{to}}]={{newDist}}",
+    "done": "Caminos mínimos calculados"
+  },
+  "topologicalSort": {
+    "start": "Orden topológico de Kahn",
+    "dequeue": "Quitar nodo {{node}} (indegree 0)",
+    "enqueue": "Nodo {{to}} ahora tiene indegree 0",
+    "done": "Orden topológico: {{order}}"
+  },
+  "unionFind": {
+    "start": "Union-Find con {{components}} componentes",
+    "consider": "Unir {{from}} y {{to}}",
+    "unite": "Fusionado; quedan {{components}} componentes",
+    "skip": "Ya en el mismo conjunto; omitir {{from}}—{{to}}",
+    "done": "Componentes finales: {{components}}"
   }
 }

@@ -1,21 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { binarySearchDemo } from './algorithms/sorting/binarySearch';
-import { quicksortDemo } from './algorithms/sorting/quicksort';
-import { mergesortDemo } from './algorithms/sorting/mergesort';
-import { bfsDemo } from './algorithms/graphs/bfs';
-import { dijkstraDemo } from './algorithms/graphs/dijkstra';
-import { primDemo } from './algorithms/graphs/prim';
+import { DEMOS } from './algorithms/registry';
 import { runTestCases } from './engine/TestRunner';
 import type { AlgorithmDemo } from './types/demo';
 
-const demos = [
-  binarySearchDemo,
-  quicksortDemo,
-  mergesortDemo,
-  bfsDemo,
-  dijkstraDemo,
-  primDemo,
-];
+const demos = Object.values(DEMOS);
 
 describe('algorithm demos', () => {
   for (const demo of demos) {

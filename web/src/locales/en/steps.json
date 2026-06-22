@@ -7,6 +7,32 @@
     "left": "Target is smaller; discard right side, right ← {{nextRight}}",
     "notFound": "Target {{target}} not found"
   },
+  "linearSearch": {
+    "start": "Linear search for target {{target}} in {{n}} elements",
+    "compare": "Check index {{i}}: value {{value}} vs target {{target}}",
+    "found": "Found at index {{i}}",
+    "notFound": "Target {{target}} not found"
+  },
+  "quickselect": {
+    "start": "Find element at rank {{k}} in {{n}} elements",
+    "pivot": "Pivot value {{value}}",
+    "compare": "Compare A[{{j}}]={{value}} at partition step",
+    "swap": "Swap {{i}} and {{j}}",
+    "placed": "Pivot placed at {{index}} (value {{value}})",
+    "done": "Element at rank {{k}} is {{value}}"
+  },
+  "countingSort": {
+    "start": "Counting sort on {{n}} elements",
+    "count": "Increment count for value {{value}} (count={{count}})",
+    "place": "Place {{value}} in output",
+    "done": "Sorting complete"
+  },
+  "heapsort": {
+    "start": "Heapsort on {{n}} elements",
+    "heapify": "Heapify: swap {{i}} with {{largest}}",
+    "extract": "Extract max to index {{end}} (value {{value}})",
+    "done": "Array sorted"
+  },
   "quicksort": {
     "start": "Quicksort on {{n}} elements",
     "choosePivot": "Choose pivot at index {{index}} (value {{value}})",
@@ -29,6 +55,12 @@
     "enqueue": "Enqueue neighbor {{to}} from {{from}}",
     "done": "BFS order: {{order}}"
   },
+  "dfs": {
+    "start": "DFS from node {{start}}",
+    "visit": "Visit node {{node}}",
+    "push": "Push neighbor {{to}} from {{from}} onto stack",
+    "done": "DFS order: {{order}}"
+  },
   "dijkstra": {
     "start": "Dijkstra from {{start}}",
     "select": "Select node {{node}} with distance {{dist}}",
@@ -39,5 +71,31 @@
     "start": "Prim MST from {{start}}",
     "addEdge": "Add edge {{from}}—{{to}} (weight {{weight}}) to MST",
     "done": "MST complete, total weight {{totalWeight}}"
+  },
+  "kruskal": {
+    "start": "Kruskal: sort edges by weight",
+    "consider": "Consider edge {{from}}—{{to}} (weight {{weight}})",
+    "add": "Add {{from}}—{{to}} to MST (weight {{weight}})",
+    "skip": "Skip {{from}}—{{to}} (would form cycle)",
+    "done": "MST weight {{totalWeight}}"
+  },
+  "bellmanFord": {
+    "start": "Bellman-Ford from {{start}}",
+    "round": "Relaxation round {{round}}",
+    "relax": "Relax {{from}}→{{to}} (w={{weight}}), dist[{{to}}]={{newDist}}",
+    "done": "Shortest paths computed"
+  },
+  "topologicalSort": {
+    "start": "Kahn topological sort",
+    "dequeue": "Remove node {{node}} (indegree 0)",
+    "enqueue": "Node {{to}} now has indegree 0",
+    "done": "Topological order: {{order}}"
+  },
+  "unionFind": {
+    "start": "Union-Find with {{components}} components",
+    "consider": "Union {{from}} and {{to}}",
+    "unite": "Merged; {{components}} components remain",
+    "skip": "Already same set; skip {{from}}—{{to}}",
+    "done": "Final components: {{components}}"
   }
 }

@@ -771,7 +771,7 @@
     "id": "union-find-disjoint-set-union",
     "name": "Union-find / Disjoint Set Union",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -811,7 +811,7 @@
     "id": "bellman-ford",
     "name": "Bellman-Ford",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -915,7 +915,7 @@
     "id": "dfs",
     "name": "DFS",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1019,7 +1019,7 @@
     "id": "kruskal",
     "name": "Kruskal",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1043,7 +1043,7 @@
     "id": "orden-topologico",
     "name": "Orden Topológico",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1667,7 +1667,7 @@
     "id": "counting-sort",
     "name": "Counting Sort",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1683,7 +1683,7 @@
     "id": "heapsort",
     "name": "Heapsort",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1707,7 +1707,7 @@
     "id": "linear-search-con-centinela",
     "name": "Linear Search Con Centinela",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1731,7 +1731,7 @@
     "id": "quickselect",
     "name": "Quickselect",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
