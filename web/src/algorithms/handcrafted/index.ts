@@ -22,10 +22,11 @@ import { GRAPH_BATCH2_DEMOS } from '../graphs/graphBatch2';
 import { REST_SORTING_DEMOS } from '../sorting/restSorting';
 import { DATA_STRUCTURE_DEMOS } from '../structures/dataStructures';
 import { STRING_BATCH_DEMOS } from '../strings/stringBatch';
+import { buildRemainingDemos } from '../remaining/factory';
 import type { AlgorithmDemo } from '../../types/demo';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const HANDCRAFTED_DEMOS: Record<string, AlgorithmDemo<any, any>> = {
+const CORE_DEMOS: Record<string, AlgorithmDemo<any, any>> = {
   'binary-search': binarySearchDemo,
   quicksort: quicksortDemo,
   mergesort: mergesortDemo,
@@ -46,6 +47,12 @@ export const HANDCRAFTED_DEMOS: Record<string, AlgorithmDemo<any, any>> = {
   ...GRAPH_BATCH2_DEMOS,
   ...DATA_STRUCTURE_DEMOS,
   ...STRING_BATCH_DEMOS,
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const HANDCRAFTED_DEMOS: Record<string, AlgorithmDemo<any, any>> = {
+  ...CORE_DEMOS,
+  ...buildRemainingDemos(new Set(Object.keys(CORE_DEMOS))),
 };
 
 export const HANDCRAFTED_IDS = new Set(Object.keys(HANDCRAFTED_DEMOS));

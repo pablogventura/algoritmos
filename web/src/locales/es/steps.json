@@ -244,6 +244,17 @@
     "aStarExpand": "Expandir nodo {{node}}",
     "pagerankStart": "PageRank en {{n}} nodos",
     "pagerankRound": "Iteración {{round}}",
-    "protocolRound": "Ronda {{round}}: {{label}}"
+    "protocolRound": "Ronda {{round}}: {{label}}",
+    "satPhase": "Fase SAT: {{phase}} en celda ({{row}},{{col}}) — {{name}}",
+    "joinProbe": "Sonda join sobre {{rows}} filas ({{name}})",
+    "timeline": {
+      "phase": "Fase {{step}}: {{phase}} ({{name}})"
+    },
+    "system": {
+      "phase": "Planificación {{step}}: {{phase}} ({{name}})"
+    },
+    "numeric": {
+      "phase": "Iteración {{step}}: {{phase}} ({{name}})"
+    }
   }
 }

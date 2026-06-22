@@ -244,6 +244,17 @@
     "aStarExpand": "Expand node {{node}}",
     "pagerankStart": "PageRank on {{n}} nodes",
     "pagerankRound": "Power iteration round {{round}}",
-    "protocolRound": "Round {{round}}: {{label}}"
+    "protocolRound": "Round {{round}}: {{label}}",
+    "satPhase": "SAT phase: {{phase}} at cell ({{row}},{{col}}) — {{name}}",
+    "joinProbe": "Join probe on {{rows}} rows ({{name}})",
+    "timeline": {
+      "phase": "Phase {{step}}: {{phase}} ({{name}})"
+    },
+    "system": {
+      "phase": "Schedule {{step}}: {{phase}} ({{name}})"
+    },
+    "numeric": {
+      "phase": "Iteration {{step}}: {{phase}} ({{name}})"
+    }
   }
 }
