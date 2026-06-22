@@ -5,6 +5,7 @@
 - binary search
 - linear search con centinela
 - quicksort
+- quicksort aleatorizado
 - mergesort
 - heapsort
 - introsort

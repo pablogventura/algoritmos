@@ -1,5 +1,13 @@
 import type { CatalogEntry, DemoInput, SceneState, VisualFamily } from '../../types/demo';
 import { layoutGraph, type GraphInput } from '../graphs/graphUtils';
+import {
+  buildNetworkVisual,
+  buildResourceSlots,
+  buildSparkline,
+  buildTimelineMetrics,
+  buildWaveform,
+  inferTimelineVizMode,
+} from './timelineVisuals';
 
 export type { GraphInput };
 
@@ -101,29 +109,50 @@ export function buildInitialScene(family: VisualFamily, input: DemoInput): Scene
     case 'system-sim':
     case 'signal-scene':
     default:
-      return buildTimelineScene(input, 0);
+      return buildTimelineScene(input, 0, family);
   }
 }
 
-export function buildTimelineScene(input: DemoInput, activeIndex: number): SceneState {
+export function buildTimelineScene(
+  input: DemoInput,
+  activeIndex: number,
+  family?: VisualFamily,
+): SceneState {
   const labels = (input as unknown as TimelineInput).labels ?? ['Step 1', 'Step 2', 'Step 3', 'Step 4'];
-  const data = (input as { data?: number[] }).data ?? [1, 0, 1, 1, 0];
+  const data = (input as { data?: number[] }).data ?? [1, 0, 1, 1, 0, 1];
+  const vizMode = inferTimelineVizMode(family, labels);
+  const palette = ['#38bdf8', '#a78bfa', '#34d399', '#fbbf24', '#fb7185', '#22d3ee'];
+
+  const items = labels.map((label, i) => ({
+    id: String(i),
+    label,
+    start: i * 2,
+    end: i * 2 + 2,
+    color: palette[i % palette.length],
+  }));
+
+  const messages = labels.slice(0, activeIndex + 1).map((label, i) => ({
+    from: vizMode === 'network' ? `N${(i % 4) + 1}` : 'ctrl',
+    to: vizMode === 'network' ? `N${((i + 1) % 4) + 1}` : 'data',
+    text: label,
+  }));
+
+  const network =
+    vizMode === 'network' ? buildNetworkVisual(activeIndex, labels) : { nodes: undefined, edges: undefined };
+
   return {
     kind: 'timeline',
-    items: labels.map((label, i) => ({
-      id: String(i),
-      label,
-      start: i * 2,
-      end: i * 2 + 2,
-      color: i === activeIndex ? '#38bdf8' : '#64748b',
-    })),
-    messages: labels.map((label) => ({
-      from: 'A',
-      to: 'B',
-      text: label,
-    })),
+    items,
+    messages,
     bits: data.map((b) => (b ? '1' : '0')).join(''),
     activeIndex,
+    vizMode,
+    sparkline: vizMode === 'convergence' ? buildSparkline(input, activeIndex, labels.length) : undefined,
+    waveform: vizMode === 'signal' ? buildWaveform(data) : undefined,
+    networkNodes: network.nodes,
+    networkEdges: network.edges,
+    metrics: buildTimelineMetrics(input, activeIndex, labels, family),
+    resourceSlots: vizMode === 'resources' ? buildResourceSlots(input, activeIndex, labels) : undefined,
   };
 }
 

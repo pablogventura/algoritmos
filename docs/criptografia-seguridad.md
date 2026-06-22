@@ -35,3 +35,5 @@ No como “usar librerías”, sino entender los algoritmos.
 - Bloom filters criptográficos / acumuladores (cultura general)
 - secret sharing de Shamir
 - zero-knowledge proofs: al menos Schnorr y zk-SNARKs (conceptualmente)
+- Schnorr
+- zk-SNARKs

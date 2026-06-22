@@ -7,25 +7,26 @@ export function timelinePhaseSteps(
   captionPrefix: string,
   name: string,
   summary: string,
+  family?: import('../../types/demo').VisualFamily,
 ): VisualStep[] {
   const steps: VisualStep[] = [
     {
       captionKey: 'steps.generic.start',
       captionParams: { name },
-      scene: buildTimelineScene({ ...input, labels: phases }, 0),
+      scene: buildTimelineScene({ ...input, labels: phases }, 0, family),
     },
   ];
   for (let i = 0; i < phases.length; i++) {
     steps.push({
       captionKey: `${captionPrefix}.phase`,
       captionParams: { phase: phases[i], step: i + 1, name },
-      scene: buildTimelineScene({ ...input, labels: phases }, i),
+      scene: buildTimelineScene({ ...input, labels: phases }, i, family),
     });
   }
   steps.push({
     captionKey: 'steps.generic.done',
     captionParams: { name, summary },
-    scene: buildTimelineScene({ ...input, labels: phases }, phases.length - 1),
+    scene: buildTimelineScene({ ...input, labels: phases }, phases.length - 1, family),
   });
   return steps;
 }

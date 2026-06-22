@@ -5,6 +5,9 @@
 - Huffman coding
 - arithmetic coding
 - Lempel-Ziv: LZ77, LZ78, LZW
+- LZ77
+- LZ78
+- LZW
 - run-length encoding
 - Burrows-Wheeler + move-to-front
 - delta encoding

@@ -351,7 +351,7 @@ const articulationDemo = makeGraphDemo(
 );
 
 const aStarDemo = makeGraphDemo(
-  'a',
+  'a-star',
   { ...DIRECTED, goal: 'E' } as GraphInput & { goal: string },
   (input) => ({ path: aStar(input as GraphInput & { goal: string }) }),
   (input, scene) => {
@@ -472,7 +472,7 @@ export const GRAPH_BATCH2_DEMOS: Record<string, GraphDemo> = {
   puentes: bridgesDemo,
   'puntos-de-articulacion': articulationDemo,
   'componentes-biconexas': bridgesDemo,
-  a: aStarDemo,
+  'a-star': aStarDemo,
   pagerank: pagerankDemo,
   'algoritmos-de-centralidad': pagerankDemo,
   'eulerian-path': makeTraversalDemo('eulerian-path', 'Eulerian path'),

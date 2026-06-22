@@ -46,6 +46,47 @@ const AREA_FAMILY: Record<string, VisualFamily> = {
   'bases-de-datos': 'tree-view',
 };
 
+const ENTRY_FAMILY: Record<string, VisualFamily> = {
+  mochila: 'matrix-grid',
+  edicion: 'string-scene',
+  coloreo: 'graph-view',
+  'tsp-exacto': 'graph-view',
+  'vertex-cover-2-aprox': 'graph-view',
+  'parallel-bfs': 'graph-view',
+  caching: 'system-sim',
+  'ski-rental': 'system-sim',
+  paging: 'system-sim',
+  'map-reduce': 'system-sim',
+  'work-span': 'system-sim',
+  consenso: 'system-sim',
+  gossip: 'system-sim',
+  'snapshot-distribuido': 'system-sim',
+  'integer-programming-basico': 'numeric-scene',
+  lz77: 'string-scene',
+  lz78: 'string-scene',
+  lzw: 'string-scene',
+  'quicksort-aleatorizado': 'array-bars',
+  'busqueda-binaria': 'array-bars',
+  'a-star': 'graph-view',
+  'b-plus-trees': 'tree-view',
+  'huffman-coding': 'signal-scene',
+  'miller-rabin': 'signal-scene',
+  viterbi: 'matrix-grid',
+  'fuerza-bruta-inteligente': 'system-sim',
+  'divide-y-venceras': 'system-sim',
+  'programacion-dinamica': 'system-sim',
+  voraces: 'system-sim',
+  backtracking: 'system-sim',
+  'branch-and-bound': 'system-sim',
+  aleatorizados: 'system-sim',
+  amortizados: 'system-sim',
+  aproximacion: 'system-sim',
+  online: 'system-sim',
+  streaming: 'system-sim',
+  paralelos: 'system-sim',
+  distribuidos: 'system-sim',
+};
+
 const METAPHOR: Record<VisualFamily, string> = {
   'array-bars': 'Animated bars with compare/swap highlights',
   'graph-view': 'Nodes and edges with visit/distance animation',
@@ -61,6 +102,8 @@ const METAPHOR: Record<VisualFamily, string> = {
 
 function slugify(name: string): string {
   return name
+    .replace(/\+/g, ' plus ')
+    .replace(/\*/g, ' star ')
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
@@ -102,8 +145,8 @@ function parseDoc(filePath: string, areaSlug: string): CatalogEntry[] {
       name: titleCase(raw),
       area: areaSlug,
       status: 'ready',
-      visualFamily: family,
-      visualMetaphor: METAPHOR[family],
+      visualFamily: ENTRY_FAMILY[id] ?? family,
+      visualMetaphor: METAPHOR[ENTRY_FAMILY[id] ?? family],
     });
   }
 

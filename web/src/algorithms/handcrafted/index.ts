@@ -22,6 +22,11 @@ import { GRAPH_BATCH2_DEMOS } from '../graphs/graphBatch2';
 import { REST_SORTING_DEMOS } from '../sorting/restSorting';
 import { DATA_STRUCTURE_DEMOS } from '../structures/dataStructures';
 import { STRING_BATCH_DEMOS } from '../strings/stringBatch';
+import { PATTERN_BATCH_DEMOS } from '../patterns/patternBatch';
+import { PATTERN_OVERVIEW_DEMOS } from '../patterns/patternOverviewBatch';
+import { COMPRESSION_EXTRA_DEMOS } from '../compresion/compressionBatch';
+import { LOGIC_CRYPTO_EXTRA_DEMOS } from '../logic/logicCryptoBatch';
+import { KEY_ALGO_DEMOS } from '../special/keyDemos';
 import { buildRemainingDemos } from '../remaining/factory';
 import type { AlgorithmDemo } from '../../types/demo';
 
@@ -47,6 +52,13 @@ const CORE_DEMOS: Record<string, AlgorithmDemo<any, any>> = {
   ...GRAPH_BATCH2_DEMOS,
   ...DATA_STRUCTURE_DEMOS,
   ...STRING_BATCH_DEMOS,
+  ...PATTERN_BATCH_DEMOS,
+  ...PATTERN_OVERVIEW_DEMOS,
+  ...COMPRESSION_EXTRA_DEMOS,
+  ...LOGIC_CRYPTO_EXTRA_DEMOS,
+  ...KEY_ALGO_DEMOS,
+  'busqueda-binaria': { ...binarySearchDemo, id: 'busqueda-binaria' },
+  'arc-consistency': { ...LOGIC_CRYPTO_EXTRA_DEMOS['ac-3'], id: 'arc-consistency' },
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -88,9 +88,12 @@ function graphSteps(entry: CatalogEntry, input: DemoInput, result: unknown): Vis
         kind: 'graph',
         nodes: scene.nodes.map((n) => ({
           ...n,
-          state: visited.includes(n.id) ? 'visited' : undefined,
+          state: n.id === node ? 'active' : visited.includes(n.id) ? 'visited' : undefined,
         })),
-        edges: scene.edges,
+        edges: scene.edges.map((e) => ({
+          ...e,
+          state: visited.includes(e.from) && visited.includes(e.to) ? 'path' : undefined,
+        })),
         queue: order.filter((x) => !visited.includes(x)),
         visited: [...visited],
       },
@@ -216,13 +219,13 @@ function timelineSteps(entry: CatalogEntry, input: DemoInput, _result: unknown):
     steps.push({
       captionKey: 'steps.generic.timeline',
       captionParams: { phase: labels[i], step: i + 1, name: entry.name },
-      scene: buildTimelineScene(input, i),
+      scene: buildTimelineScene(input, i, entry.visualFamily),
     });
   }
   steps.push({
     captionKey: 'steps.generic.done',
     captionParams: { name: entry.name, summary: labels.join(' → ') },
-    scene: buildTimelineScene(input, labels.length - 1),
+    scene: buildTimelineScene(input, labels.length - 1, entry.visualFamily),
   });
   return steps;
 }

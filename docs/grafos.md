@@ -9,6 +9,8 @@
 - orden topológico
 - componentes conexas
 - componentes fuertemente conexas: Kosaraju, Tarjan
+- Kosaraju
+- Tarjan
 - puntos de articulación
 - puentes
 - componentes biconexas

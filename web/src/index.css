@@ -29,3 +29,17 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+@keyframes flow-edge {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.viz-flow-edge {
+  animation: flow-edge 0.8s linear infinite;
+}
+
+.viz-wave-glow {
+  filter: drop-shadow(0 0 4px rgba(52, 211, 153, 0.6));
+}

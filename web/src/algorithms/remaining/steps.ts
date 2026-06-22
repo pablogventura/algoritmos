@@ -10,7 +10,7 @@ export function buildRemainingSteps(entry: CatalogEntry, input: DemoInput, resul
   switch (entry.visualFamily) {
     case 'signal-scene':
     case 'state-machine':
-      return timelinePhaseSteps(input, defaultPhases(entry.id), 'steps.batch.timeline', entry.name, String(JSON.stringify(result)).slice(0, 40));
+      return timelinePhaseSteps(input, defaultPhases(entry.id), 'steps.batch.timeline', entry.name, String(JSON.stringify(result)).slice(0, 40), entry.visualFamily);
     case 'system-sim':
       return timelinePhaseSteps(
         input,
@@ -18,6 +18,7 @@ export function buildRemainingSteps(entry: CatalogEntry, input: DemoInput, resul
         'steps.batch.system',
         entry.name,
         String(JSON.stringify(result)).slice(0, 40),
+        entry.visualFamily,
       );
     case 'numeric-scene':
       return numericSteps(entry, input, result);
@@ -43,7 +44,7 @@ function numericSteps(entry: CatalogEntry, input: DemoInput, result: unknown): V
       : values;
   const seq = Array.isArray(history) ? history : values;
   const phases = seq.map((v, i) => `iter ${i + 1}: ${Number(v).toFixed(2)}`);
-  return timelinePhaseSteps(input, phases.length ? phases : defaultPhases(entry.id), 'steps.batch.numeric', entry.name, String(seq[seq.length - 1] ?? ''));
+  return timelinePhaseSteps(input, phases.length ? phases : defaultPhases(entry.id), 'steps.batch.numeric', entry.name, String(seq[seq.length - 1] ?? ''), entry.visualFamily);
 }
 
 function dbTreeSteps(entry: CatalogEntry, input: DemoInput, _result: unknown): VisualStep[] {

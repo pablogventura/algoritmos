@@ -1,6 +1,6 @@
 # Algoritmos
 
-Visual algorithm playground published on GitHub Pages. **268 interactive demos** — all with handcrafted step-by-step animations covering every entry in the `docs/` corpus.
+Visual algorithm playground published on GitHub Pages. **319 interactive demos** — all with handcrafted step-by-step animations covering every entry in the `docs/` corpus (including §1 algorithmic patterns).
 
 ## Structure
 
@@ -35,7 +35,7 @@ npm test
 
 ## Features
 
-- **268 interactive demos** with step-by-step animation
+- **319 interactive demos** with step-by-step animation
 - **Compare mode** at `/compare` (two algorithms, same input)
 - **Shareable URLs** with input and step (`?data=&step=&lang=`)
 - **Export GIF** from any demo page

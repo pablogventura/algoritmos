@@ -170,6 +170,8 @@ const STRUCTURE_IDS = [
   'arboles-binarios-de-busqueda',
   'arrays-dinamicos',
   'avl',
+  'b-trees',
+  'b-plus-trees',
   'binomial-heaps',
   'bloom-filters',
   'colas',

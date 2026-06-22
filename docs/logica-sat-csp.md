@@ -19,6 +19,7 @@
 ## CSP
 
 - arc consistency: AC-3
+- AC-3
 - backjumping
 - constraint propagation
 

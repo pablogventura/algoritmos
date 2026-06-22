@@ -41,6 +41,11 @@
     "pivotPlaced": "Place pivot at index {{index}} (value {{value}})",
     "done": "Array sorted"
   },
+  "randomizedQuicksort": {
+    "start": "Randomized quicksort on {{n}} elements",
+    "pick": "Random pivot at index {{index}} (value {{value}})",
+    "done": "Array sorted"
+  },
   "mergesort": {
     "start": "Mergesort on {{n}} elements",
     "split": "Split range [{{left}}..{{right}}] at mid={{mid}}",
@@ -255,6 +260,85 @@
     },
     "numeric": {
       "phase": "Iteration {{step}}: {{phase}} ({{name}})"
+    }
+  },
+  "patterns": {
+    "enumerationStart": "Enumerate all {{n}} elements",
+    "enumerationStep": "Add A[{{i}}]={{value}} → sum={{sum}}",
+    "enumerationDone": "Total sum = {{sum}}",
+    "pruneStart": "Search with pruning (target {{target}})",
+    "pruneCut": "Prune at index {{i}} (sum={{sum}})",
+    "pruneTake": "Take index {{i}}, partial sum={{next}}",
+    "pruneDone": "Best value = {{best}}",
+    "mitmStart": "Split at midpoint {{mid}}",
+    "mitmLeft": "Left half index {{i}} = {{value}}",
+    "mitmRight": "Right half index {{j}} = {{value}}",
+    "mitmDone": "Meet-in-the-middle complete",
+    "closestStart": "Find closest pair (1D sorted)",
+    "closestStep": "Pair ({{left}},{{right}}) distance={{d}}, best={{best}}",
+    "closestDone": "Minimum distance = {{best}}",
+    "intervalStart": "Interval scheduling (greedy by finish time)",
+    "intervalPick": "Select {{count}} non-overlapping intervals",
+    "intervalDone": "Maximum intervals = {{count}}",
+    "colorStart": "Greedy graph coloring",
+    "colorNode": "Color node {{node}}",
+    "colorDone": "Used {{colors}} colors",
+    "tspStart": "TSP exact: enumerate permutations",
+    "tspPerm": "Tour {{perm}}",
+    "tspDone": "Best tour length = {{length}}",
+    "setCoverStart": "Greedy set cover on universe",
+    "setCoverPick": "Pick {{sets}} sets",
+    "setCoverDone": "Cover with {{sets}} sets",
+    "vcStart": "2-approx vertex cover",
+    "vcPick": "Cover size {{size}}",
+    "vcDone": "Vertex cover size = {{size}}",
+    "reservoirStart": "Reservoir sampling (k={{k}})",
+    "reservoirStep": "At i={{i}}, sample={{sample}}",
+    "reservoirDone": "Final sample = {{sample}}",
+    "prefixStart": "Prefix sum scan",
+    "prefixStep": "Prefix at {{i}} = {{sum}}",
+    "prefixDone": "Total prefix sum = {{sum}}",
+    "parallelBfsStart": "Parallel BFS by levels",
+    "parallelBfsLevel": "Level {{round}}: {{level}}",
+    "parallelBfsDone": "Parallel BFS complete",
+    "tableStart": "Dynamic table capacity {{cap}}",
+    "tableGrow": "Grow to size {{size}}",
+    "tableDone": "Final size = {{size}}"
+  },
+  "compression": {
+    "lz77Start": "LZ77 on string length {{n}}",
+    "lz77Window": "Window at {{i}}: '{{char}}'",
+    "lz77Done": "Tokens: {{summary}}",
+    "lz78Start": "LZ78 dictionary coding",
+    "lz78Step": "Emit at {{i}}: '{{char}}'",
+    "lz78Done": "Codes: {{summary}}",
+    "lzwStart": "LZW dictionary build",
+    "lzwStep": "Read {{i}}: '{{char}}'",
+    "lzwDone": "Codes: {{summary}}"
+  },
+  "crypto": {
+    "schnorr": {
+      "phase": "Schnorr step {{step}}: {{phase}}"
+    },
+    "zk": {
+      "phase": "zk step {{step}}: {{phase}}"
+    }
+  },
+  "tarjan": {
+    "start": "Tarjan SCC: initialize indices",
+    "pop": "Pop {{node}} onto SCC stack",
+    "component": "SCC found (size {{size}})",
+    "done": "{{count}} strongly connected components"
+  },
+  "patternOverview": {
+    "phase": "Pattern {{step}}: {{phase}} ({{name}})"
+  },
+  "keyAlgos": {
+    "huffmanStart": "Huffman: {{n}} symbol frequencies",
+    "huffmanMerge": "Merge {{a}}+{{b}}={{sum}} (step {{merge}})",
+    "huffmanDone": "Total coded weight = {{totalBits}}",
+    "millerRabin": {
+      "phase": "Miller-Rabin step {{step}}: {{phase}} ({{name}})"
     }
   }
 }

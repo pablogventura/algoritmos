@@ -204,8 +204,8 @@
     "name": "Viterbi",
     "area": "aprendizaje-automatico",
     "status": "ready",
-    "visualFamily": "signal-scene",
-    "visualMetaphor": "Bits, codewords, curves, or attention grid"
+    "visualFamily": "matrix-grid",
+    "visualMetaphor": "Colored cells with dependency arrows"
   },
   {
     "id": "xgboost-lightgbm",
@@ -216,7 +216,7 @@
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
   {
-    "id": "b-trees",
+    "id": "b-plus-trees",
     "name": "B+ Trees",
     "area": "bases-de-datos",
     "status": "ready",
@@ -288,7 +288,7 @@
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
   {
-    "id": "burrows-wheeler-move-to-front",
+    "id": "burrows-wheeler-plus-move-to-front",
     "name": "Burrows-Wheeler + Move-to-front",
     "area": "compresion-codificacion",
     "status": "ready",
@@ -358,6 +358,30 @@
     "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
+  },
+  {
+    "id": "lz77",
+    "name": "LZ77",
+    "area": "compresion-codificacion",
+    "status": "ready",
+    "visualFamily": "string-scene",
+    "visualMetaphor": "Two strings with sliding pointers"
+  },
+  {
+    "id": "lz78",
+    "name": "LZ78",
+    "area": "compresion-codificacion",
+    "status": "ready",
+    "visualFamily": "string-scene",
+    "visualMetaphor": "Two strings with sliding pointers"
+  },
+  {
+    "id": "lzw",
+    "name": "LZW",
+    "area": "compresion-codificacion",
+    "status": "ready",
+    "visualFamily": "string-scene",
+    "visualMetaphor": "Two strings with sliding pointers"
   },
   {
     "id": "reed-solomon",
@@ -512,6 +536,14 @@
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
   {
+    "id": "schnorr",
+    "name": "Schnorr",
+    "area": "criptografia-seguridad",
+    "status": "ready",
+    "visualFamily": "signal-scene",
+    "visualMetaphor": "Bits, codewords, curves, or attention grid"
+  },
+  {
     "id": "secret-sharing-de-shamir",
     "name": "Secret Sharing De Shamir",
     "area": "criptografia-seguridad",
@@ -536,6 +568,14 @@
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
   {
+    "id": "zk-snarks",
+    "name": "Zk-SNARKs",
+    "area": "criptografia-seguridad",
+    "status": "ready",
+    "visualFamily": "signal-scene",
+    "visualMetaphor": "Bits, codewords, curves, or attention grid"
+  },
+  {
     "id": "arboles-binarios-de-busqueda",
     "name": "Árboles Binarios De Búsqueda",
     "area": "estructuras-de-datos",
@@ -554,6 +594,14 @@
   {
     "id": "avl",
     "name": "AVL",
+    "area": "estructuras-de-datos",
+    "status": "ready",
+    "visualFamily": "tree-view",
+    "visualMetaphor": "Tree nodes with insert/rotate animation"
+  },
+  {
+    "id": "b-trees",
+    "name": "B-trees",
     "area": "estructuras-de-datos",
     "status": "ready",
     "visualFamily": "tree-view",
@@ -784,7 +832,7 @@
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
   {
-    "id": "a",
+    "id": "a-star",
     "name": "A*",
     "area": "grafos",
     "status": "ready",
@@ -1016,6 +1064,14 @@
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
   {
+    "id": "kosaraju",
+    "name": "Kosaraju",
+    "area": "grafos",
+    "status": "ready",
+    "visualFamily": "graph-view",
+    "visualMetaphor": "Nodes and edges with visit/distance animation"
+  },
+  {
     "id": "kruskal",
     "name": "Kruskal",
     "area": "grafos",
@@ -1102,6 +1158,22 @@
     "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
+  },
+  {
+    "id": "tarjan",
+    "name": "Tarjan",
+    "area": "grafos",
+    "status": "ready",
+    "visualFamily": "graph-view",
+    "visualMetaphor": "Nodes and edges with visit/distance animation"
+  },
+  {
+    "id": "ac-3",
+    "name": "AC-3",
+    "area": "logica-sat-csp",
+    "status": "ready",
+    "visualFamily": "matrix-grid",
+    "visualMetaphor": "Colored cells with dependency arrows"
   },
   {
     "id": "algoritmos-de-minimizacion-de-formulas",
@@ -1744,6 +1816,14 @@
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
   {
+    "id": "quicksort-aleatorizado",
+    "name": "Quicksort Aleatorizado",
+    "area": "ordenamiento-busqueda-seleccion",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
     "id": "radix-sort",
     "name": "Radix Sort",
     "area": "ordenamiento-busqueda-seleccion",
@@ -1774,6 +1854,334 @@
     "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "aleatorizados",
+    "name": "Aleatorizados",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "amortizados",
+    "name": "Amortizados",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "aproximacion",
+    "name": "Aproximación",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "backtracking",
+    "name": "Backtracking",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "branch-and-bound",
+    "name": "Branch And Bound",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "busqueda-binaria",
+    "name": "Búsqueda Binaria",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "caching",
+    "name": "Caching",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "closest-pair",
+    "name": "Closest Pair",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "coloreo",
+    "name": "Coloreo",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "graph-view",
+    "visualMetaphor": "Nodes and edges with visit/distance animation"
+  },
+  {
+    "id": "consenso",
+    "name": "Consenso",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "csp",
+    "name": "CSP",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "distribuidos",
+    "name": "Distribuidos",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "divide-y-venceras",
+    "name": "Divide Y Vencerás",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "edicion",
+    "name": "Edición",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "string-scene",
+    "visualMetaphor": "Two strings with sliding pointers"
+  },
+  {
+    "id": "enumeracion",
+    "name": "Enumeración",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "fuerza-bruta-inteligente",
+    "name": "Fuerza Bruta Inteligente",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "gossip",
+    "name": "Gossip",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "integer-programming-basico",
+    "name": "Integer Programming Básico",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "numeric-scene",
+    "visualMetaphor": "Matrices, vectors, and convergence plots"
+  },
+  {
+    "id": "interval-scheduling",
+    "name": "Interval Scheduling",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "map-reduce",
+    "name": "Map-reduce",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "meet-in-the-middle",
+    "name": "Meet-in-the-middle",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "mochila",
+    "name": "Mochila",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "matrix-grid",
+    "visualMetaphor": "Colored cells with dependency arrows"
+  },
+  {
+    "id": "n-reinas",
+    "name": "N-reinas",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "online",
+    "name": "Online",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "paging",
+    "name": "Paging",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "paralelos",
+    "name": "Paralelos",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "parallel-bfs",
+    "name": "Parallel BFS",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "graph-view",
+    "visualMetaphor": "Nodes and edges with visit/distance animation"
+  },
+  {
+    "id": "poda",
+    "name": "Poda",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "prefix-sum",
+    "name": "Prefix-sum",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "programacion-dinamica",
+    "name": "Programación Dinámica",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "reservoir-sampling",
+    "name": "Reservoir Sampling",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "sat-simple",
+    "name": "SAT Simple",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "set-cover-greedy",
+    "name": "Set Cover Greedy",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "ski-rental",
+    "name": "Ski Rental",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "snapshot-distribuido",
+    "name": "Snapshot Distribuido",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "streaming",
+    "name": "Streaming",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "tablas-dinamicas",
+    "name": "Tablas Dinámicas",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "array-bars",
+    "visualMetaphor": "Animated bars with compare/swap highlights"
+  },
+  {
+    "id": "tsp-exacto",
+    "name": "TSP Exacto",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "graph-view",
+    "visualMetaphor": "Nodes and edges with visit/distance animation"
+  },
+  {
+    "id": "vertex-cover-2-aprox",
+    "name": "Vertex Cover 2-aprox",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "graph-view",
+    "visualMetaphor": "Nodes and edges with visit/distance animation"
+  },
+  {
+    "id": "voraces",
+    "name": "Voraces",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
+  },
+  {
+    "id": "work-span",
+    "name": "Work/span",
+    "area": "patrones-algoritmicos",
+    "status": "ready",
+    "visualFamily": "system-sim",
+    "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
   {
     "id": "banker-s-algorithm",

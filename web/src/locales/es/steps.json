@@ -41,6 +41,11 @@
     "pivotPlaced": "Pivote en índice {{index}} (valor {{value}})",
     "done": "Arreglo ordenado"
   },
+  "randomizedQuicksort": {
+    "start": "Quicksort aleatorizado sobre {{n}} elementos",
+    "pick": "Pivote aleatorio en índice {{index}} (valor {{value}})",
+    "done": "Arreglo ordenado"
+  },
   "mergesort": {
     "start": "Mergesort sobre {{n}} elementos",
     "split": "Dividir [{{left}}..{{right}}] en mid={{mid}}",
@@ -255,6 +260,85 @@
     },
     "numeric": {
       "phase": "Iteración {{step}}: {{phase}} ({{name}})"
+    }
+  },
+  "patterns": {
+    "enumerationStart": "Enumerar los {{n}} elementos",
+    "enumerationStep": "Sumar A[{{i}}]={{value}} → suma={{sum}}",
+    "enumerationDone": "Suma total = {{sum}}",
+    "pruneStart": "Búsqueda con poda (objetivo {{target}})",
+    "pruneCut": "Podar en índice {{i}} (suma={{sum}})",
+    "pruneTake": "Tomar índice {{i}}, suma parcial={{next}}",
+    "pruneDone": "Mejor valor = {{best}}",
+    "mitmStart": "Dividir en punto medio {{mid}}",
+    "mitmLeft": "Mitad izquierda índice {{i}} = {{value}}",
+    "mitmRight": "Mitad derecha índice {{j}} = {{value}}",
+    "mitmDone": "Meet-in-the-middle completo",
+    "closestStart": "Par más cercano (1D ordenado)",
+    "closestStep": "Par ({{left}},{{right}}) distancia={{d}}, mejor={{best}}",
+    "closestDone": "Distancia mínima = {{best}}",
+    "intervalStart": "Interval scheduling (voraz por fin)",
+    "intervalPick": "Elegir {{count}} intervalos",
+    "intervalDone": "Máximo intervalos = {{count}}",
+    "colorStart": "Coloreo voraz de grafo",
+    "colorNode": "Colorear nodo {{node}}",
+    "colorDone": "{{colors}} colores usados",
+    "tspStart": "TSP exacto: permutaciones",
+    "tspPerm": "Tour {{perm}}",
+    "tspDone": "Mejor tour = {{length}}",
+    "setCoverStart": "Set cover voraz",
+    "setCoverPick": "Elegir {{sets}} conjuntos",
+    "setCoverDone": "Cubrir con {{sets}} conjuntos",
+    "vcStart": "Vertex cover 2-aprox",
+    "vcPick": "Tamaño cobertura {{size}}",
+    "vcDone": "Vertex cover tamaño = {{size}}",
+    "reservoirStart": "Muestreo reservoir (k={{k}})",
+    "reservoirStep": "En i={{i}}, muestra={{sample}}",
+    "reservoirDone": "Muestra final = {{sample}}",
+    "prefixStart": "Escaneo prefix-sum",
+    "prefixStep": "Prefijo en {{i}} = {{sum}}",
+    "prefixDone": "Suma prefijo total = {{sum}}",
+    "parallelBfsStart": "BFS paralelo por niveles",
+    "parallelBfsLevel": "Nivel {{round}}: {{level}}",
+    "parallelBfsDone": "BFS paralelo completo",
+    "tableStart": "Tabla dinámica capacidad {{cap}}",
+    "tableGrow": "Crecer a tamaño {{size}}",
+    "tableDone": "Tamaño final = {{size}}"
+  },
+  "compression": {
+    "lz77Start": "LZ77 sobre cadena de longitud {{n}}",
+    "lz77Window": "Ventana en {{i}}: '{{char}}'",
+    "lz77Done": "Tokens: {{summary}}",
+    "lz78Start": "Codificación LZ78",
+    "lz78Step": "Emitir en {{i}}: '{{char}}'",
+    "lz78Done": "Códigos: {{summary}}",
+    "lzwStart": "Diccionario LZW",
+    "lzwStep": "Leer {{i}}: '{{char}}'",
+    "lzwDone": "Códigos: {{summary}}"
+  },
+  "crypto": {
+    "schnorr": {
+      "phase": "Schnorr paso {{step}}: {{phase}}"
+    },
+    "zk": {
+      "phase": "zk paso {{step}}: {{phase}}"
+    }
+  },
+  "tarjan": {
+    "start": "Tarjan SCC: inicializar índices",
+    "pop": "Apilar {{node}} en pila SCC",
+    "component": "SCC encontrada (tamaño {{size}})",
+    "done": "{{count}} componentes fuertemente conexas"
+  },
+  "patternOverview": {
+    "phase": "Patrón {{step}}: {{phase}} ({{name}})"
+  },
+  "keyAlgos": {
+    "huffmanStart": "Huffman: {{n}} frecuencias de símbolos",
+    "huffmanMerge": "Fusionar {{a}}+{{b}}={{sum}} (paso {{merge}})",
+    "huffmanDone": "Peso codificado total = {{totalBits}}",
+    "millerRabin": {
+      "phase": "Miller-Rabin paso {{step}}: {{phase}} ({{name}})"
     }
   }
 }

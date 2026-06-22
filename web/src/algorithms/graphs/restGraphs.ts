@@ -602,13 +602,88 @@ export const kosarajuDemo: AlgorithmDemo<GraphInput, { components: string[][] }>
       }
       components.push(comp);
     }
-    return { components };
+    return { components: normalizeSCC(components) };
   },
   testCases: [
-    { name: 'two scc', input: { nodes: ['A', 'B', 'C', 'D'], edges: [{ from: 'A', to: 'B', directed: true }, { from: 'B', to: 'C', directed: true }, { from: 'C', to: 'A', directed: true }, { from: 'C', to: 'D', directed: true }], start: 'A' }, expected: { components: [['A', 'C', 'B'], ['D']] } },
+    { name: 'two scc', input: { nodes: ['A', 'B', 'C', 'D'], edges: [{ from: 'A', to: 'B', directed: true }, { from: 'B', to: 'C', directed: true }, { from: 'C', to: 'A', directed: true }, { from: 'C', to: 'D', directed: true }], start: 'A' }, expected: { components: [['A', 'B', 'C'], ['D']] } },
     { name: 'single', input: { nodes: ['X'], edges: [], start: 'X' }, expected: { components: [['X']] } },
     { name: 'chain', input: { nodes: ['1', '2', '3'], edges: [{ from: '1', to: '2', directed: true }, { from: '2', to: '3', directed: true }], start: '1' }, expected: { components: [['1'], ['2'], ['3']] } },
   ],
+};
+
+export const kosarajuNamedDemo: AlgorithmDemo<GraphInput, { components: string[][] }> = {
+  ...kosarajuDemo,
+  id: 'kosaraju',
+};
+
+function normalizeSCC(components: string[][]): string[][] {
+  return components
+    .map((component) => [...component].sort())
+    .sort((a, b) => a.join(',').localeCompare(b.join(',')));
+}
+
+function tarjanSCC(input: GraphInput): string[][] {
+  const adj = buildDirectedAdjacency(input);
+  const index = new Map<string, number>();
+  const low = new Map<string, number>();
+  const stack: string[] = [];
+  const onStack = new Set<string>();
+  const components: string[][] = [];
+  let idx = 0;
+
+  function strongConnect(v: string) {
+    index.set(v, idx);
+    low.set(v, idx);
+    idx++;
+    stack.push(v);
+    onStack.add(v);
+    for (const { to } of adj.get(v) ?? []) {
+      if (!index.has(to)) {
+        strongConnect(to);
+        low.set(v, Math.min(low.get(v)!, low.get(to)!));
+      } else if (onStack.has(to)) {
+        low.set(v, Math.min(low.get(v)!, index.get(to)!));
+      }
+    }
+    if (low.get(v) === index.get(v)) {
+      const comp: string[] = [];
+      while (true) {
+        const w = stack.pop()!;
+        onStack.delete(w);
+        comp.push(w);
+        if (w === v) break;
+      }
+      components.push(comp);
+    }
+  }
+
+  for (const n of input.nodes) if (!index.has(n)) strongConnect(n);
+  return normalizeSCC(components);
+}
+
+export const tarjanDemo: AlgorithmDemo<GraphInput, { components: string[][] }> = {
+  id: 'tarjan',
+  visualFamily: 'graph-view',
+  metadata: { timeComplexity: 'O(V + E)', spaceComplexity: 'O(V)' },
+  defaultInput: kosarajuDemo.defaultInput,
+  buildInitialScene: initialGraphScene,
+  generateSteps(input) {
+    const scene = initialGraphScene(input);
+    const components = tarjanSCC(input);
+    const steps: VisualStep[] = [graphStep(scene, {}, 'steps.tarjan.start', {})];
+    const seen: string[] = [];
+    for (const comp of components) {
+      for (const u of comp) {
+        seen.push(u);
+        steps.push(graphStep(scene, { nodes: markNodes(scene, seen, u), visited: [...seen] }, 'steps.tarjan.pop', { node: u }));
+      }
+      steps.push(graphStep(scene, { visited: [...seen] }, 'steps.tarjan.component', { size: comp.length }));
+    }
+    steps.push(graphStep(scene, { visited: components.flat() }, 'steps.tarjan.done', { count: components.length }));
+    return steps;
+  },
+  run: (input) => ({ components: tarjanSCC(input) }),
+  testCases: kosarajuDemo.testCases,
 };
 
 export const REST_GRAPH_DEMOS = {
@@ -618,4 +693,6 @@ export const REST_GRAPH_DEMOS = {
   boruvka: boruvkaDemo,
   'ford-fulkerson': fordFulkersonDemo,
   'componentes-fuertemente-conexas': kosarajuDemo,
+  kosaraju: kosarajuNamedDemo,
+  tarjan: tarjanDemo,
 };

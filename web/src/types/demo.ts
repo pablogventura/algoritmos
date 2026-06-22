@@ -78,6 +78,8 @@ export interface MatrixScene {
   highlights: Record<string, HighlightKind>;
   rowLabels?: string[];
   colLabels?: string[];
+  waveFront?: number;
+  dependency?: { from: string; to: string };
 }
 
 export interface StringScene {
@@ -102,12 +104,42 @@ export interface TimelineMessage {
   text: string;
 }
 
+export interface TimelineNetworkNode {
+  id: string;
+  label: string;
+  x: number;
+  y: number;
+  role?: 'active' | 'idle' | 'leader' | 'target';
+}
+
+export interface TimelineNetworkEdge {
+  from: string;
+  to: string;
+  active?: boolean;
+}
+
+export type TimelineVizMode = 'pipeline' | 'network' | 'signal' | 'convergence' | 'resources';
+
+export interface TimelineMetric {
+  label: string;
+  value: number;
+  max?: number;
+  unit?: string;
+}
+
 export interface TimelineScene {
   kind: 'timeline';
   items: TimelineItem[];
   messages: TimelineMessage[];
   bits: string;
   activeIndex: number;
+  vizMode?: TimelineVizMode;
+  sparkline?: number[];
+  waveform?: number[];
+  networkNodes?: TimelineNetworkNode[];
+  networkEdges?: TimelineNetworkEdge[];
+  metrics?: TimelineMetric[];
+  resourceSlots?: { label: string; filled: boolean; hot?: boolean }[];
 }
 
 export type SceneState = ArrayScene | GraphScene | TreeScene | MatrixScene | StringScene | TimelineScene;

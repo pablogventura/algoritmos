@@ -43,6 +43,8 @@ function mergeMatrixScene(base: MatrixScene, patch: Partial<MatrixScene>): Matri
     highlights: { ...base.highlights, ...(patch.highlights ?? {}) },
     rowLabels: patch.rowLabels ?? base.rowLabels,
     colLabels: patch.colLabels ?? base.colLabels,
+    waveFront: patch.waveFront ?? base.waveFront,
+    dependency: patch.dependency ?? base.dependency,
   };
 }
 
@@ -63,6 +65,13 @@ function mergeTimelineScene(base: TimelineScene, patch: Partial<TimelineScene>):
     messages: patch.messages ?? base.messages,
     bits: patch.bits ?? base.bits,
     activeIndex: patch.activeIndex ?? base.activeIndex,
+    vizMode: patch.vizMode ?? base.vizMode,
+    sparkline: patch.sparkline ?? base.sparkline,
+    waveform: patch.waveform ?? base.waveform,
+    networkNodes: patch.networkNodes ?? base.networkNodes,
+    networkEdges: patch.networkEdges ?? base.networkEdges,
+    metrics: patch.metrics ?? base.metrics,
+    resourceSlots: patch.resourceSlots ?? base.resourceSlots,
   };
 }
 

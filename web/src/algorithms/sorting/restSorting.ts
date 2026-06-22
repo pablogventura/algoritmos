@@ -581,6 +581,92 @@ export const externalSortDemo: AlgorithmDemo<SortInput, SortOutput> = {
   ],
 };
 
+function randomPivotIndex(lo: number, hi: number): number {
+  const span = hi - lo + 1;
+  return lo + ((lo * 31 + hi * 17 + span * 13) % span);
+}
+
+function randomizedQuicksortRun(values: number[]): number[] {
+  const arr = [...values];
+  function partition(low: number, high: number): number {
+    const pivotIdx = randomPivotIndex(low, high);
+    [arr[pivotIdx], arr[high]] = [arr[high], arr[pivotIdx]];
+    const pivot = arr[high];
+    let i = low - 1;
+    for (let j = low; j < high; j++) {
+      if (arr[j] <= pivot) {
+        i++;
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+    }
+    [arr[i + 1], arr[high]] = [arr[high], arr[i + 1]];
+    return i + 1;
+  }
+  function sort(low: number, high: number) {
+    if (low < high) {
+      const pi = partition(low, high);
+      sort(low, pi - 1);
+      sort(pi + 1, high);
+    }
+  }
+  sort(0, arr.length - 1);
+  return arr;
+}
+
+export const randomizedQuicksortDemo: AlgorithmDemo<SortInput, SortOutput> = {
+  id: 'quicksort-aleatorizado',
+  visualFamily: 'array-bars',
+  metadata: { timeComplexity: 'O(n log n) expected', spaceComplexity: 'O(log n)' },
+  defaultInput: { values: [38, 27, 43, 3, 9, 82, 10] },
+  buildInitialScene(input) {
+    return { kind: 'array', values: [...input.values], highlights: {}, pointers: {} };
+  },
+  generateSteps(input) {
+    const arr = [...input.values];
+    const steps = [arrayStep(arr, {}, {}, 'steps.randomizedQuicksort.start', { n: arr.length })];
+    function partition(low: number, high: number): number {
+      const pivotIdx = randomPivotIndex(low, high);
+      if (pivotIdx !== high) {
+        [arr[pivotIdx], arr[high]] = [arr[high], arr[pivotIdx]];
+        steps.push(arrayStep(arr, { [pivotIdx]: 'active', [high]: 'active' }, { pivotIdx, high }, 'steps.randomizedQuicksort.pick', { index: pivotIdx, value: arr[high] }));
+      } else {
+        steps.push(arrayStep(arr, { [high]: 'pivot' }, { pivot: high }, 'steps.randomizedQuicksort.pick', { index: high, value: arr[high] }));
+      }
+      const pivot = arr[high];
+      let i = low - 1;
+      for (let j = low; j < high; j++) {
+        steps.push(arrayStep(arr, { [j]: 'compare', [high]: 'pivot' }, { i, j, pivot: high }, 'steps.quicksort.compare', { j, value: arr[j], pivot }));
+        if (arr[j] <= pivot) {
+          i++;
+          if (i !== j) {
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+            steps.push(arrayStep(arr, { [i]: 'active', [j]: 'active', [high]: 'pivot' }, { i, j, pivot: high }, 'steps.quicksort.swap', { i, j }));
+          }
+        }
+      }
+      [arr[i + 1], arr[high]] = [arr[high], arr[i + 1]];
+      steps.push(arrayStep(arr, { [i + 1]: 'sorted' }, { pivot: i + 1 }, 'steps.quicksort.pivotPlaced', { index: i + 1, value: arr[i + 1] }));
+      return i + 1;
+    }
+    function sort(low: number, high: number) {
+      if (low < high) {
+        const pi = partition(low, high);
+        sort(low, pi - 1);
+        sort(pi + 1, high);
+      }
+    }
+    sort(0, arr.length - 1);
+    steps.push(arrayStep(arr, Object.fromEntries(arr.map((_, i) => [i, 'sorted'])), {}, 'steps.randomizedQuicksort.done', {}));
+    return steps;
+  },
+  run: (input) => ({ values: randomizedQuicksortRun(input.values) }),
+  testCases: [
+    { name: 'basic', input: { values: [3, 1, 4, 1, 5] }, expected: { values: [1, 1, 3, 4, 5] } },
+    { name: 'sorted', input: { values: [1, 2, 3] }, expected: { values: [1, 2, 3] } },
+    { name: 'reverse', input: { values: [5, 4, 3] }, expected: { values: [3, 4, 5] } },
+  ],
+};
+
 export const REST_SORTING_DEMOS = {
   'selection-algorithm': selectionSortDemo,
   'radix-sort': radixSortDemo,
@@ -592,4 +678,5 @@ export const REST_SORTING_DEMOS = {
   'top-k-con-heap': topKHeapDemo,
   'median-of-medians': medianOfMediansDemo,
   'external-sorting': externalSortDemo,
+  'quicksort-aleatorizado': randomizedQuicksortDemo,
 };
