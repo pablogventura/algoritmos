@@ -1,4 +1,13 @@
-import type { SceneState, VisualStep, ArrayScene, GraphScene } from '../types/demo';
+import type {
+  ArrayScene,
+  GraphScene,
+  MatrixScene,
+  SceneState,
+  StringScene,
+  TimelineScene,
+  TreeScene,
+  VisualStep,
+} from '../types/demo';
 
 function mergeArrayScene(base: ArrayScene, patch: Partial<ArrayScene>): ArrayScene {
   return {
@@ -19,13 +28,51 @@ function mergeGraphScene(base: GraphScene, patch: Partial<GraphScene>): GraphSce
   };
 }
 
+function mergeTreeScene(base: TreeScene, patch: Partial<TreeScene>): TreeScene {
+  return {
+    kind: 'tree',
+    nodes: patch.nodes ?? base.nodes,
+    highlights: patch.highlights ?? base.highlights,
+  };
+}
+
+function mergeMatrixScene(base: MatrixScene, patch: Partial<MatrixScene>): MatrixScene {
+  return {
+    kind: 'matrix',
+    cells: patch.cells ?? base.cells,
+    highlights: { ...base.highlights, ...(patch.highlights ?? {}) },
+    rowLabels: patch.rowLabels ?? base.rowLabels,
+    colLabels: patch.colLabels ?? base.colLabels,
+  };
+}
+
+function mergeStringScene(base: StringScene, patch: Partial<StringScene>): StringScene {
+  return {
+    kind: 'string',
+    primary: patch.primary ?? base.primary,
+    secondary: patch.secondary ?? base.secondary,
+    pointers: { ...base.pointers, ...(patch.pointers ?? {}) },
+    highlights: patch.highlights ?? base.highlights,
+  };
+}
+
+function mergeTimelineScene(base: TimelineScene, patch: Partial<TimelineScene>): TimelineScene {
+  return {
+    kind: 'timeline',
+    items: patch.items ?? base.items,
+    messages: patch.messages ?? base.messages,
+    bits: patch.bits ?? base.bits,
+    activeIndex: patch.activeIndex ?? base.activeIndex,
+  };
+}
+
 export function applyStep(scene: SceneState, patch: VisualStep['scene']): SceneState {
-  if (patch.kind === 'array' && scene.kind === 'array') {
-    return mergeArrayScene(scene, patch as Partial<ArrayScene>);
-  }
-  if (patch.kind === 'graph' && scene.kind === 'graph') {
-    return mergeGraphScene(scene, patch as Partial<GraphScene>);
-  }
+  if (patch.kind === 'array' && scene.kind === 'array') return mergeArrayScene(scene, patch);
+  if (patch.kind === 'graph' && scene.kind === 'graph') return mergeGraphScene(scene, patch);
+  if (patch.kind === 'tree' && scene.kind === 'tree') return mergeTreeScene(scene, patch);
+  if (patch.kind === 'matrix' && scene.kind === 'matrix') return mergeMatrixScene(scene, patch);
+  if (patch.kind === 'string' && scene.kind === 'string') return mergeStringScene(scene, patch);
+  if (patch.kind === 'timeline' && scene.kind === 'timeline') return mergeTimelineScene(scene, patch);
   return scene;
 }
 
@@ -35,17 +82,4 @@ export function composeScene(initial: SceneState, steps: VisualStep[], index: nu
     scene = applyStep(scene, steps[i].scene);
   }
   return scene;
-}
-
-export function resetHighlights(scene: SceneState): SceneState {
-  if (scene.kind === 'array') {
-    return { ...scene, highlights: {}, pointers: {} };
-  }
-  return {
-    ...scene,
-    nodes: scene.nodes.map((n) => ({ ...n, state: undefined })),
-    edges: scene.edges.map((e) => ({ ...e, state: undefined })),
-    queue: [],
-    visited: [],
-  };
 }

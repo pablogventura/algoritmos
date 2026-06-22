@@ -30,24 +30,6 @@ interface CatalogEntry {
   visualMetaphor: string;
 }
 
-const READY_IDS = new Set([
-  'binary-search',
-  'linear-search-con-centinela',
-  'quicksort',
-  'mergesort',
-  'quickselect',
-  'counting-sort',
-  'heapsort',
-  'bfs',
-  'dfs',
-  'dijkstra',
-  'prim',
-  'kruskal',
-  'bellman-ford',
-  'orden-topologico',
-  'union-find-disjoint-set-union',
-]);
-
 const AREA_FAMILY: Record<string, VisualFamily> = {
   'patrones-algoritmicos': 'array-bars',
   'ordenamiento-busqueda-seleccion': 'array-bars',
@@ -119,7 +101,7 @@ function parseDoc(filePath: string, areaSlug: string): CatalogEntry[] {
       id,
       name: titleCase(raw),
       area: areaSlug,
-      status: READY_IDS.has(id) ? 'ready' : 'planned',
+      status: 'ready',
       visualFamily: family,
       visualMetaphor: METAPHOR[family],
     });

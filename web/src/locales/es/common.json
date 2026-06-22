@@ -23,6 +23,7 @@
   "visualFamily": "Visualizador",
   "noResults": "No se encontraron algoritmos",
   "footer": "Hecho para estudiantes y docentes",
+  "genericProblem": "Demo visual interactiva de {{name}}.",
   "nav": {
     "home": "Inicio"
   }

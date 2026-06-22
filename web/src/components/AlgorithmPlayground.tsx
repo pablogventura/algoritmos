@@ -31,8 +31,10 @@ export function AlgorithmPlayground({ entry }: AlgorithmPlaygroundProps) {
   }, [demo, load]);
 
   const problemText = useMemo(() => {
-    return t(`${entry.id}.problem`, { ns: 'algorithms', defaultValue: '' });
-  }, [entry.id, t]);
+    const specific = t(`${entry.id}.problem`, { ns: 'algorithms', defaultValue: '' });
+    if (specific) return specific;
+    return t('genericProblem', { name: entry.name });
+  }, [entry.id, entry.name, t]);
 
   if (!demo) return null;
 
@@ -112,7 +114,8 @@ export function PlannedPreview({ entry }: { entry: CatalogEntry }) {
 }
 
 export function AlgorithmPageContent({ entry }: { entry: CatalogEntry }) {
-  if (entry.status === 'ready' && getDemo(entry.id)) {
+  const demo = getDemo(entry.id);
+  if (demo) {
     return <AlgorithmPlayground entry={entry} />;
   }
   return <PlannedPreview entry={entry} />;

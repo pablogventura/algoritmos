@@ -23,6 +23,7 @@
   "visualFamily": "Visualizer",
   "noResults": "No algorithms found",
   "footer": "Built for learners and educators",
+  "genericProblem": "Interactive visual demo for {{name}}.",
   "nav": {
     "home": "Home"
   }

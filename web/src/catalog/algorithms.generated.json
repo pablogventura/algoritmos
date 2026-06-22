@@ -3,7 +3,7 @@
     "id": "attention",
     "name": "Attention",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -11,7 +11,7 @@
     "id": "backpropagation",
     "name": "Backpropagation",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -19,7 +19,7 @@
     "id": "batch-normalization",
     "name": "Batch Normalization",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -27,7 +27,7 @@
     "id": "beam-search",
     "name": "Beam Search",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -35,7 +35,7 @@
     "id": "dbscan",
     "name": "DBSCAN",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -43,7 +43,7 @@
     "id": "decision-trees",
     "name": "Decision Trees",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -51,7 +51,7 @@
     "id": "dropout",
     "name": "Dropout",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -59,7 +59,7 @@
     "id": "gaussian-mixture-models",
     "name": "Gaussian Mixture Models",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -67,7 +67,7 @@
     "id": "gradient-boosting",
     "name": "Gradient Boosting",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -75,7 +75,7 @@
     "id": "k-means",
     "name": "K-means",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -83,7 +83,7 @@
     "id": "k-nearest-neighbors",
     "name": "K-nearest Neighbors",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -91,7 +91,7 @@
     "id": "linear-regression",
     "name": "Linear Regression",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -99,7 +99,7 @@
     "id": "logistic-regression",
     "name": "Logistic Regression",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -107,7 +107,7 @@
     "id": "monte-carlo-tree-search",
     "name": "Monte Carlo Tree Search",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -115,7 +115,7 @@
     "id": "naive-bayes",
     "name": "Naive Bayes",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -123,7 +123,7 @@
     "id": "pca",
     "name": "PCA",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -131,7 +131,7 @@
     "id": "policy-iteration",
     "name": "Policy Iteration",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -139,7 +139,7 @@
     "id": "q-learning",
     "name": "Q-learning",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -147,7 +147,7 @@
     "id": "random-forests",
     "name": "Random Forests",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -155,7 +155,7 @@
     "id": "ridge-lasso",
     "name": "Ridge / Lasso",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -163,7 +163,7 @@
     "id": "svm",
     "name": "SVM",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -171,7 +171,7 @@
     "id": "t-sne",
     "name": "T-SNE",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -179,7 +179,7 @@
     "id": "transformers",
     "name": "Transformers",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -187,7 +187,7 @@
     "id": "umap",
     "name": "UMAP",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -195,7 +195,7 @@
     "id": "value-iteration",
     "name": "Value Iteration",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -203,7 +203,7 @@
     "id": "viterbi",
     "name": "Viterbi",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -211,7 +211,7 @@
     "id": "xgboost-lightgbm",
     "name": "XGBoost / LightGBM",
     "area": "aprendizaje-automatico",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -219,7 +219,7 @@
     "id": "b-trees",
     "name": "B+ Trees",
     "area": "bases-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -227,7 +227,7 @@
     "id": "cost-based-optimization",
     "name": "Cost-based Optimization",
     "area": "bases-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -235,7 +235,7 @@
     "id": "hash-joins",
     "name": "Hash Joins",
     "area": "bases-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -243,7 +243,7 @@
     "id": "mvcc",
     "name": "MVCC",
     "area": "bases-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -251,7 +251,7 @@
     "id": "nested-loop-join",
     "name": "Nested-loop Join",
     "area": "bases-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -259,7 +259,7 @@
     "id": "query-optimization-dinamica-estilo-selinger",
     "name": "Query Optimization Dinámica Estilo Selinger",
     "area": "bases-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -267,7 +267,7 @@
     "id": "sort-merge-join",
     "name": "Sort-merge Join",
     "area": "bases-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -275,7 +275,7 @@
     "id": "two-phase-locking",
     "name": "Two-phase Locking",
     "area": "bases-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -283,7 +283,7 @@
     "id": "arithmetic-coding",
     "name": "Arithmetic Coding",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -291,7 +291,7 @@
     "id": "burrows-wheeler-move-to-front",
     "name": "Burrows-Wheeler + Move-to-front",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -299,7 +299,7 @@
     "id": "crc",
     "name": "CRC",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -307,7 +307,7 @@
     "id": "delta-encoding",
     "name": "Delta Encoding",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -315,7 +315,7 @@
     "id": "elias-gamma-delta-coding",
     "name": "Elias Gamma/delta Coding",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -323,7 +323,7 @@
     "id": "golomb-rice-coding",
     "name": "Golomb/Rice Coding",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -331,7 +331,7 @@
     "id": "hamming-codes",
     "name": "Hamming Codes",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -339,7 +339,7 @@
     "id": "huffman-coding",
     "name": "Huffman Coding",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -347,7 +347,7 @@
     "id": "ldpc",
     "name": "LDPC",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -355,7 +355,7 @@
     "id": "lempel-ziv",
     "name": "Lempel-Ziv",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -363,7 +363,7 @@
     "id": "reed-solomon",
     "name": "Reed-Solomon",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -371,7 +371,7 @@
     "id": "run-length-encoding",
     "name": "Run-length Encoding",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -379,7 +379,7 @@
     "id": "viterbi-decoding",
     "name": "Viterbi Decoding",
     "area": "compresion-codificacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -387,7 +387,7 @@
     "id": "aes",
     "name": "AES",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -395,7 +395,7 @@
     "id": "argon2",
     "name": "Argon2",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -403,7 +403,7 @@
     "id": "bloom-filters-criptograficos-acumuladores",
     "name": "Bloom Filters Criptográficos / Acumuladores",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -411,7 +411,7 @@
     "id": "chacha20",
     "name": "ChaCha20",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -419,7 +419,7 @@
     "id": "curvas-elipticas",
     "name": "Curvas Elípticas",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -427,7 +427,7 @@
     "id": "diffie-hellman",
     "name": "Diffie-Hellman",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -435,7 +435,7 @@
     "id": "ecdsa-eddsa",
     "name": "ECDSA / EdDSA",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -443,7 +443,7 @@
     "id": "elgamal",
     "name": "ElGamal",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -451,7 +451,7 @@
     "id": "euclides-extendido",
     "name": "Euclides Extendido",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -459,7 +459,7 @@
     "id": "exponenciacion-modular-rapida",
     "name": "Exponenciación Modular Rápida",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -467,7 +467,7 @@
     "id": "hmac",
     "name": "HMAC",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -475,7 +475,7 @@
     "id": "merkle-trees",
     "name": "Merkle Trees",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -483,7 +483,7 @@
     "id": "miller-rabin",
     "name": "Miller-Rabin",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -491,7 +491,7 @@
     "id": "pbkdf2",
     "name": "PBKDF2",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -499,7 +499,7 @@
     "id": "poly1305",
     "name": "Poly1305",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -507,7 +507,7 @@
     "id": "rsa",
     "name": "RSA",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -515,7 +515,7 @@
     "id": "secret-sharing-de-shamir",
     "name": "Secret Sharing De Shamir",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -523,7 +523,7 @@
     "id": "sha-2-sha-3",
     "name": "SHA-2 / SHA-3",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -531,7 +531,7 @@
     "id": "zero-knowledge-proofs",
     "name": "Zero-knowledge Proofs",
     "area": "criptografia-seguridad",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "signal-scene",
     "visualMetaphor": "Bits, codewords, curves, or attention grid"
   },
@@ -539,7 +539,7 @@
     "id": "arboles-binarios-de-busqueda",
     "name": "Árboles Binarios De Búsqueda",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -547,7 +547,7 @@
     "id": "arrays-dinamicos",
     "name": "Arrays Dinámicos",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -555,7 +555,7 @@
     "id": "avl",
     "name": "AVL",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -563,7 +563,7 @@
     "id": "binomial-heaps",
     "name": "Binomial Heaps",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -571,7 +571,7 @@
     "id": "bloom-filters",
     "name": "Bloom Filters",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -579,7 +579,7 @@
     "id": "colas",
     "name": "Colas",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -587,7 +587,7 @@
     "id": "colas-de-prioridad",
     "name": "Colas De Prioridad",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -595,7 +595,7 @@
     "id": "count-min-sketch",
     "name": "Count-Min Sketch",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -603,7 +603,7 @@
     "id": "cuckoo-hashing",
     "name": "Cuckoo Hashing",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -611,7 +611,7 @@
     "id": "fenwick-trees",
     "name": "Fenwick Trees",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -619,7 +619,7 @@
     "id": "fibonacci-heaps",
     "name": "Fibonacci Heaps",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -627,7 +627,7 @@
     "id": "hash-tables",
     "name": "Hash Tables",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -635,7 +635,7 @@
     "id": "hashing-universal",
     "name": "Hashing Universal",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -643,7 +643,7 @@
     "id": "heaps-binarios",
     "name": "Heaps Binarios",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -651,7 +651,7 @@
     "id": "heaps-d-arios",
     "name": "Heaps D-arios",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -659,7 +659,7 @@
     "id": "hyperloglog",
     "name": "HyperLogLog",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -667,7 +667,7 @@
     "id": "listas-enlazadas",
     "name": "Listas Enlazadas",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -675,7 +675,7 @@
     "id": "pilas",
     "name": "Pilas",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -683,7 +683,7 @@
     "id": "radix-trees",
     "name": "Radix Trees",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -691,7 +691,7 @@
     "id": "red-black-trees",
     "name": "Red-black Trees",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -699,7 +699,7 @@
     "id": "robin-hood-hashing",
     "name": "Robin Hood Hashing",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -707,7 +707,7 @@
     "id": "segment-trees",
     "name": "Segment Trees",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -715,7 +715,7 @@
     "id": "skip-lists",
     "name": "Skip Lists",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -723,7 +723,7 @@
     "id": "sparse-tables",
     "name": "Sparse Tables",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -731,7 +731,7 @@
     "id": "splay-trees",
     "name": "Splay Trees",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -739,7 +739,7 @@
     "id": "suffix-arrays",
     "name": "Suffix Arrays",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -747,7 +747,7 @@
     "id": "suffix-trees",
     "name": "Suffix Trees",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -755,7 +755,7 @@
     "id": "treaps",
     "name": "Treaps",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -763,7 +763,7 @@
     "id": "tries",
     "name": "Tries",
     "area": "estructuras-de-datos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "tree-view",
     "visualMetaphor": "Tree nodes with insert/rotate animation"
   },
@@ -779,7 +779,7 @@
     "id": "2-opt-3-opt",
     "name": "2-opt / 3-opt",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -787,7 +787,7 @@
     "id": "a",
     "name": "A*",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -795,7 +795,7 @@
     "id": "algoritmo-hungaro",
     "name": "Algoritmo Húngaro",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -803,7 +803,7 @@
     "id": "algoritmos-de-centralidad",
     "name": "Algoritmos De Centralidad",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -827,7 +827,7 @@
     "id": "bidirectional-search",
     "name": "Bidirectional Search",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -835,7 +835,7 @@
     "id": "blossom",
     "name": "Blossom",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -843,7 +843,7 @@
     "id": "boruvka",
     "name": "Borůvka",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -851,7 +851,7 @@
     "id": "christofides",
     "name": "Christofides",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -859,7 +859,7 @@
     "id": "componentes-biconexas",
     "name": "Componentes Biconexas",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -867,7 +867,7 @@
     "id": "componentes-conexas",
     "name": "Componentes Conexas",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -875,7 +875,7 @@
     "id": "componentes-fuertemente-conexas",
     "name": "Componentes Fuertemente Conexas",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -883,7 +883,7 @@
     "id": "consensus-paxos-raft",
     "name": "Consensus / Paxos / Raft",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -891,7 +891,7 @@
     "id": "consistent-hashing",
     "name": "Consistent Hashing",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -899,7 +899,7 @@
     "id": "cortes-minimos",
     "name": "Cortes Mínimos",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -907,7 +907,7 @@
     "id": "deteccion-de-ciclos",
     "name": "Detección De Ciclos",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -931,7 +931,7 @@
     "id": "dijkstra-y-bellman-ford-como-base-de-ruteo",
     "name": "Dijkstra Y Bellman-Ford Como Base De Ruteo",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -939,7 +939,7 @@
     "id": "dinic",
     "name": "Dinic",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -947,7 +947,7 @@
     "id": "edmonds-karp",
     "name": "Edmonds-Karp",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -955,7 +955,7 @@
     "id": "eulerian-path",
     "name": "Eulerian Path",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -963,7 +963,7 @@
     "id": "flooding-controlado",
     "name": "Flooding Controlado",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -971,7 +971,7 @@
     "id": "floyd-warshall",
     "name": "Floyd-Warshall",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -979,7 +979,7 @@
     "id": "ford-fulkerson",
     "name": "Ford-Fulkerson",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -987,7 +987,7 @@
     "id": "gossip-protocols",
     "name": "Gossip Protocols",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -995,7 +995,7 @@
     "id": "held-karp",
     "name": "Held-Karp",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1003,7 +1003,7 @@
     "id": "hopcroft-karp",
     "name": "Hopcroft-Karp",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1011,7 +1011,7 @@
     "id": "johnson",
     "name": "Johnson",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1027,7 +1027,7 @@
     "id": "leader-election",
     "name": "Leader Election",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1035,7 +1035,7 @@
     "id": "min-cost-max-flow",
     "name": "Min-cost Max-flow",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1051,7 +1051,7 @@
     "id": "pagerank",
     "name": "PageRank",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1067,7 +1067,7 @@
     "id": "puentes",
     "name": "Puentes",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1075,7 +1075,7 @@
     "id": "puntos-de-articulacion",
     "name": "Puntos De Articulación",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1083,7 +1083,7 @@
     "id": "push-relabel",
     "name": "Push-relabel",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1091,7 +1091,7 @@
     "id": "simulated-annealing-para-heuristicas",
     "name": "Simulated Annealing Para Heurísticas",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1099,7 +1099,7 @@
     "id": "spanning-tree-protocol-conceptualmente",
     "name": "Spanning Tree Protocol, Conceptualmente",
     "area": "grafos",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "graph-view",
     "visualMetaphor": "Nodes and edges with visit/distance animation"
   },
@@ -1107,7 +1107,7 @@
     "id": "algoritmos-de-minimizacion-de-formulas",
     "name": "Algoritmos De Minimización De Fórmulas",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1115,7 +1115,7 @@
     "id": "algoritmos-sobre-bdd",
     "name": "Algoritmos Sobre BDD",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1123,7 +1123,7 @@
     "id": "arc-consistency",
     "name": "Arc Consistency",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1131,7 +1131,7 @@
     "id": "backjumping",
     "name": "Backjumping",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1139,7 +1139,7 @@
     "id": "cdcl",
     "name": "CDCL",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1147,7 +1147,7 @@
     "id": "chase",
     "name": "Chase",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1155,7 +1155,7 @@
     "id": "congruence-closure",
     "name": "Congruence Closure",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1163,7 +1163,7 @@
     "id": "constraint-propagation",
     "name": "Constraint Propagation",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1171,7 +1171,7 @@
     "id": "davis-putnam",
     "name": "Davis-Putnam",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1179,7 +1179,7 @@
     "id": "dpll",
     "name": "DPLL",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1187,7 +1187,7 @@
     "id": "explicit-state",
     "name": "Explicit-state",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1195,7 +1195,7 @@
     "id": "homomorphism-checking",
     "name": "Homomorphism Checking",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1203,7 +1203,7 @@
     "id": "nelson-oppen",
     "name": "Nelson-Oppen",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1211,7 +1211,7 @@
     "id": "pure-literal-elimination",
     "name": "Pure Literal Elimination",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1219,7 +1219,7 @@
     "id": "resolucion-de-primer-orden",
     "name": "Resolución De Primer Orden",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1227,7 +1227,7 @@
     "id": "resolucion-proposicional",
     "name": "Resolución Proposicional",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1235,7 +1235,7 @@
     "id": "substructure-subisomorphism-search",
     "name": "Substructure / Subisomorphism Search",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1243,7 +1243,7 @@
     "id": "symbolic-model-checking-con-bdd",
     "name": "Symbolic Model Checking Con BDD",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1251,7 +1251,7 @@
     "id": "tableaux",
     "name": "Tableaux",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1259,7 +1259,7 @@
     "id": "unificacion-de-robinson",
     "name": "Unificación De Robinson",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1267,7 +1267,7 @@
     "id": "unit-propagation",
     "name": "Unit Propagation",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1275,7 +1275,7 @@
     "id": "walksat",
     "name": "WalkSAT",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1283,7 +1283,7 @@
     "id": "watched-literals",
     "name": "Watched Literals",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1291,7 +1291,7 @@
     "id": "weisfeiler-leman",
     "name": "Weisfeiler-Leman",
     "area": "logica-sat-csp",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "matrix-grid",
     "visualMetaphor": "Colored cells with dependency arrows"
   },
@@ -1299,7 +1299,7 @@
     "id": "automatic-differentiation",
     "name": "Automatic Differentiation",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1307,7 +1307,7 @@
     "id": "biseccion",
     "name": "Bisección",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1315,7 +1315,7 @@
     "id": "cholesky",
     "name": "Cholesky",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1323,7 +1323,7 @@
     "id": "conjugate-gradient",
     "name": "Conjugate Gradient",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1331,7 +1331,7 @@
     "id": "eigenvalue-algorithms",
     "name": "Eigenvalue Algorithms",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1339,7 +1339,7 @@
     "id": "eliminacion-gaussiana",
     "name": "Eliminación Gaussiana",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1347,7 +1347,7 @@
     "id": "euler-explicito-implicito",
     "name": "Euler Explícito/implícito",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1355,7 +1355,7 @@
     "id": "fft",
     "name": "FFT",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1363,7 +1363,7 @@
     "id": "gmres",
     "name": "GMRES",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1371,7 +1371,7 @@
     "id": "kalman-filter",
     "name": "Kalman Filter",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1379,7 +1379,7 @@
     "id": "karatsuba",
     "name": "Karatsuba",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1387,7 +1387,7 @@
     "id": "lanczos",
     "name": "Lanczos",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1395,7 +1395,7 @@
     "id": "lu",
     "name": "LU",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1403,7 +1403,7 @@
     "id": "monte-carlo",
     "name": "Monte Carlo",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1411,7 +1411,7 @@
     "id": "montgomery-multiplication",
     "name": "Montgomery Multiplication",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1419,7 +1419,7 @@
     "id": "newton-raphson",
     "name": "Newton-Raphson",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1427,7 +1427,7 @@
     "id": "ntt",
     "name": "NTT",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1435,7 +1435,7 @@
     "id": "particle-filter",
     "name": "Particle Filter",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1443,7 +1443,7 @@
     "id": "power-iteration",
     "name": "Power Iteration",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1451,7 +1451,7 @@
     "id": "qr",
     "name": "QR",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1459,7 +1459,7 @@
     "id": "quasi-monte-carlo",
     "name": "Quasi-Monte Carlo",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1467,7 +1467,7 @@
     "id": "runge-kutta",
     "name": "Runge-Kutta",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1475,7 +1475,7 @@
     "id": "secante",
     "name": "Secante",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1483,7 +1483,7 @@
     "id": "strassen",
     "name": "Strassen",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1491,7 +1491,7 @@
     "id": "svd",
     "name": "SVD",
     "area": "numericos-algebra-lineal",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1499,7 +1499,7 @@
     "id": "adam",
     "name": "Adam",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1507,7 +1507,7 @@
     "id": "admm",
     "name": "ADMM",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1515,7 +1515,7 @@
     "id": "branch-and-cut",
     "name": "Branch And Cut",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1523,7 +1523,7 @@
     "id": "coordinate-descent",
     "name": "Coordinate Descent",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1531,7 +1531,7 @@
     "id": "cutting-planes",
     "name": "Cutting Planes",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1539,7 +1539,7 @@
     "id": "expectation-maximization",
     "name": "Expectation-maximization",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1547,7 +1547,7 @@
     "id": "genetic-algorithms",
     "name": "Genetic Algorithms",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1555,7 +1555,7 @@
     "id": "gradient-descent",
     "name": "Gradient Descent",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1563,7 +1563,7 @@
     "id": "hill-climbing",
     "name": "Hill Climbing",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1571,7 +1571,7 @@
     "id": "interior-point-methods",
     "name": "Interior Point Methods",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1579,7 +1579,7 @@
     "id": "lagrange-multipliers",
     "name": "Lagrange Multipliers",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1587,7 +1587,7 @@
     "id": "momentum",
     "name": "Momentum",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1595,7 +1595,7 @@
     "id": "newton",
     "name": "Newton",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1603,7 +1603,7 @@
     "id": "quasi-newton-bfgs",
     "name": "Quasi-Newton / BFGS",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1611,7 +1611,7 @@
     "id": "simplex",
     "name": "Simplex",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1619,7 +1619,7 @@
     "id": "simulated-annealing",
     "name": "Simulated Annealing",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1627,7 +1627,7 @@
     "id": "stochastic-gradient-descent",
     "name": "Stochastic Gradient Descent",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1635,7 +1635,7 @@
     "id": "tabu-search",
     "name": "Tabu Search",
     "area": "optimizacion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "numeric-scene",
     "visualMetaphor": "Matrices, vectors, and convergence plots"
   },
@@ -1651,7 +1651,7 @@
     "id": "bucket-sort",
     "name": "Bucket Sort",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1659,7 +1659,7 @@
     "id": "busqueda-exponencial",
     "name": "Búsqueda Exponencial",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1675,7 +1675,7 @@
     "id": "external-sorting",
     "name": "External Sorting",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1691,7 +1691,7 @@
     "id": "interpolation-search",
     "name": "Interpolation Search",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1699,7 +1699,7 @@
     "id": "introsort",
     "name": "Introsort",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1715,7 +1715,7 @@
     "id": "median-of-medians",
     "name": "Median-of-medians",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1747,7 +1747,7 @@
     "id": "radix-sort",
     "name": "Radix Sort",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1755,7 +1755,7 @@
     "id": "selection-algorithm",
     "name": "Selection Algorithm",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1763,7 +1763,7 @@
     "id": "timsort",
     "name": "Timsort",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1771,7 +1771,7 @@
     "id": "top-k-con-heap",
     "name": "Top-k Con Heap",
     "area": "ordenamiento-busqueda-seleccion",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "array-bars",
     "visualMetaphor": "Animated bars with compare/swap highlights"
   },
@@ -1779,7 +1779,7 @@
     "id": "banker-s-algorithm",
     "name": "Banker's Algorithm",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1787,7 +1787,7 @@
     "id": "clock",
     "name": "Clock",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1795,7 +1795,7 @@
     "id": "compare-and-swap",
     "name": "Compare-and-swap",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1803,7 +1803,7 @@
     "id": "copying-collector",
     "name": "Copying Collector",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1811,7 +1811,7 @@
     "id": "deadlock-detection",
     "name": "Deadlock Detection",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1819,7 +1819,7 @@
     "id": "fair-scheduling",
     "name": "Fair Scheduling",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1827,7 +1827,7 @@
     "id": "fifo",
     "name": "FIFO",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1835,7 +1835,7 @@
     "id": "generational-gc",
     "name": "Generational GC",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1843,7 +1843,7 @@
     "id": "hazard-pointers",
     "name": "Hazard Pointers",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1851,7 +1851,7 @@
     "id": "lock-free-algorithms",
     "name": "Lock-free Algorithms",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1859,7 +1859,7 @@
     "id": "log-structured-merge-trees",
     "name": "Log-structured Merge Trees",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1867,7 +1867,7 @@
     "id": "lru",
     "name": "LRU",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1875,7 +1875,7 @@
     "id": "mark-and-sweep",
     "name": "Mark-and-sweep",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1883,7 +1883,7 @@
     "id": "monitores",
     "name": "Monitores",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1891,7 +1891,7 @@
     "id": "multilevel-feedback-queue",
     "name": "Multilevel Feedback Queue",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1899,7 +1899,7 @@
     "id": "priority-scheduling",
     "name": "Priority Scheduling",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1907,7 +1907,7 @@
     "id": "rcu",
     "name": "RCU",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1915,7 +1915,7 @@
     "id": "reference-counting",
     "name": "Reference Counting",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1923,7 +1923,7 @@
     "id": "round-robin",
     "name": "Round-robin",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1931,7 +1931,7 @@
     "id": "semaforos",
     "name": "Semáforos",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1939,7 +1939,7 @@
     "id": "shortest-job-first",
     "name": "Shortest Job First",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1947,7 +1947,7 @@
     "id": "spinlocks",
     "name": "Spinlocks",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1955,7 +1955,7 @@
     "id": "two-phase-commit",
     "name": "Two-phase Commit",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1963,7 +1963,7 @@
     "id": "working-set",
     "name": "Working Set",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1971,7 +1971,7 @@
     "id": "write-ahead-logging",
     "name": "Write-ahead Logging",
     "area": "sistemas-operativos-concurrencia",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "system-sim",
     "visualMetaphor": "Processes, pages, locks, or message timeline"
   },
@@ -1979,7 +1979,7 @@
     "id": "aho-corasick",
     "name": "Aho-Corasick",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -1987,7 +1987,7 @@
     "id": "boyer-moore",
     "name": "Boyer-Moore",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -1995,7 +1995,7 @@
     "id": "burrows-wheeler-transform",
     "name": "Burrows-Wheeler Transform",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2003,7 +2003,7 @@
     "id": "cyk-parsing",
     "name": "CYK Parsing",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2011,7 +2011,7 @@
     "id": "earley-parser",
     "name": "Earley Parser",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2019,7 +2019,7 @@
     "id": "fm-index",
     "name": "FM-index",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2027,7 +2027,7 @@
     "id": "kmp",
     "name": "KMP",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2035,7 +2035,7 @@
     "id": "lcp-array",
     "name": "LCP Array",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2043,7 +2043,7 @@
     "id": "levenshtein-distance",
     "name": "Levenshtein Distance",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2051,7 +2051,7 @@
     "id": "ll-lr-parsing",
     "name": "LL/LR Parsing",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2059,7 +2059,7 @@
     "id": "minimizacion-de-dfa",
     "name": "Minimización De DFA",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2067,7 +2067,7 @@
     "id": "myers-diff",
     "name": "Myers Diff",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2075,7 +2075,7 @@
     "id": "needleman-wunsch",
     "name": "Needleman-Wunsch",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2083,7 +2083,7 @@
     "id": "prefix-function",
     "name": "Prefix-function",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2091,7 +2091,7 @@
     "id": "rabin-karp",
     "name": "Rabin-Karp",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2099,7 +2099,7 @@
     "id": "smith-waterman",
     "name": "Smith-Waterman",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2107,7 +2107,7 @@
     "id": "subset-construction-nfa-dfa",
     "name": "Subset Construction NFA → DFA",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2115,7 +2115,7 @@
     "id": "suffix-array",
     "name": "Suffix Array",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2123,7 +2123,7 @@
     "id": "suffix-tree",
     "name": "Suffix Tree",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2131,7 +2131,7 @@
     "id": "thompson-construction-para-expresiones-regulares",
     "name": "Thompson Construction Para Expresiones Regulares",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   },
@@ -2139,7 +2139,7 @@
     "id": "z-algorithm",
     "name": "Z-algorithm",
     "area": "strings-parsing-automatas",
-    "status": "planned",
+    "status": "ready",
     "visualFamily": "string-scene",
     "visualMetaphor": "Two strings with sliding pointers"
   }

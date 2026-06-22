@@ -1,6 +1,6 @@
 # Algoritmos
 
-Visual algorithm playground published on GitHub Pages.
+Visual algorithm playground published on GitHub Pages. **268 interactive demos** from the corpus in `docs/` (15 handcrafted step-by-step animations + 253 bulk demos by visual family).
 
 ## Structure
 
@@ -40,7 +40,8 @@ npm test
 ## Adding a visual demo
 
 1. Run `npm run catalog` to refresh the index from `docs/`.
-2. Implement `generateSteps` in `web/src/algorithms/`.
-3. Register in `web/src/algorithms/registry.ts` and set `status: ready` in catalog (or update `READY_IDS` in `scripts/generate-catalog.ts`).
-4. Add step strings to `web/src/locales/en/steps.json` and `es/steps.json`.
-5. Run `npm test`.
+2. **Handcrafted (preferred):** add `generateSteps` under `web/src/algorithms/handcrafted/` and register in `web/src/algorithms/handcrafted/index.ts`.
+3. **Bulk fallback:** new catalog entries get a demo automatically via `web/src/algorithms/bulk/` (generic steps per `visualFamily`).
+4. Set `status: ready` in catalog (or update `READY_IDS` in `scripts/generate-catalog.ts`).
+5. Add step strings to `web/src/locales/en/steps.json` and `es/steps.json` (handcrafted); bulk uses `steps.generic.*`.
+6. Run `npm test` (537 tests, one per catalog entry).

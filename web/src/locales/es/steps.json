@@ -97,5 +97,15 @@
     "unite": "Fusionado; quedan {{components}} componentes",
     "skip": "Ya en el mismo conjunto; omitir {{from}}—{{to}}",
     "done": "Componentes finales: {{components}}"
+  },
+  "generic": {
+    "start": "Iniciando {{name}}",
+    "arrayScan": "Procesar índice {{index}} (valor {{value}}) en {{name}}",
+    "graphVisit": "Visitar nodo {{node}} en {{name}}",
+    "treeInsert": "Insertar clave {{key}} en {{name}}",
+    "matrixCell": "Actualizar celda ({{row}},{{col}}) = {{value}} en {{name}}",
+    "stringWindow": "Ventana en índice {{index}} en {{name}}",
+    "timeline": "Fase {{step}}: {{phase}} ({{name}})",
+    "done": "{{name}} completo — {{summary}}"
   }
 }

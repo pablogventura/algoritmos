@@ -57,7 +57,60 @@ export interface GraphScene {
   visited: string[];
 }
 
-export type SceneState = ArrayScene | GraphScene;
+export interface TreeNodeView {
+  id: string;
+  label: string;
+  x: number;
+  y: number;
+  parentId?: string;
+  state?: HighlightKind;
+}
+
+export interface TreeScene {
+  kind: 'tree';
+  nodes: TreeNodeView[];
+  highlights: string[];
+}
+
+export interface MatrixScene {
+  kind: 'matrix';
+  cells: number[][];
+  highlights: Record<string, HighlightKind>;
+  rowLabels?: string[];
+  colLabels?: string[];
+}
+
+export interface StringScene {
+  kind: 'string';
+  primary: string;
+  secondary?: string;
+  pointers: Record<string, number>;
+  highlights: number[];
+}
+
+export interface TimelineItem {
+  id: string;
+  label: string;
+  start: number;
+  end: number;
+  color?: string;
+}
+
+export interface TimelineMessage {
+  from: string;
+  to: string;
+  text: string;
+}
+
+export interface TimelineScene {
+  kind: 'timeline';
+  items: TimelineItem[];
+  messages: TimelineMessage[];
+  bits: string;
+  activeIndex: number;
+}
+
+export type SceneState = ArrayScene | GraphScene | TreeScene | MatrixScene | StringScene | TimelineScene;
 
 export interface VisualStep {
   captionKey: string;
@@ -73,7 +126,7 @@ export interface TestCase<TInput = unknown, TOutput = unknown> {
 }
 
 export interface AlgorithmMetadata {
-  problemKey: string;
+  problemKey?: string;
   timeComplexity: string;
   spaceComplexity: string;
 }
@@ -97,3 +150,5 @@ export interface CatalogEntry {
   visualFamily: VisualFamily;
   visualMetaphor: string;
 }
+
+export type DemoInput = Record<string, unknown>;

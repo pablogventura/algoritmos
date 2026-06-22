@@ -97,5 +97,15 @@
     "unite": "Merged; {{components}} components remain",
     "skip": "Already same set; skip {{from}}—{{to}}",
     "done": "Final components: {{components}}"
+  },
+  "generic": {
+    "start": "Starting {{name}}",
+    "arrayScan": "Process index {{index}} (value {{value}}) in {{name}}",
+    "graphVisit": "Visit node {{node}} in {{name}}",
+    "treeInsert": "Insert key {{key}} into {{name}}",
+    "matrixCell": "Update cell ({{row}},{{col}}) = {{value}} in {{name}}",
+    "stringWindow": "Scan window at index {{index}} in {{name}}",
+    "timeline": "Phase {{step}}: {{phase}} ({{name}})",
+    "done": "{{name}} complete — {{summary}}"
   }
 }
