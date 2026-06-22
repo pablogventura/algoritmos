@@ -1,0 +1,16 @@
+{
+  "name": "AlgoViz",
+  "short_name": "AlgoViz",
+  "description": "Visual algorithm playground for learning and teaching",
+  "theme_color": "#020617",
+  "background_color": "#020617",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

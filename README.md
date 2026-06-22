@@ -39,7 +39,6 @@ npm test
 - **Compare mode** at `/compare` (two algorithms, same input)
 - **Shareable URLs** with input and step (`?data=&step=&lang=`)
 - **Export GIF** from any demo page
-- **PWA** installable for offline cache after first visit
 - **Keyboard shortcuts**: Space, arrows, R, Home
 - **i18n**: English default, Spanish toggle
 

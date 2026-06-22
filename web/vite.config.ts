@@ -1,38 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
-import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
   base: process.env.VITE_BASE_PATH ?? '/algoritmos/',
-  plugins: [
-    react(),
-    tailwindcss(),
-    VitePWA({
-      registerType: 'autoUpdate',
-      includeAssets: ['icons.svg'],
-      manifest: {
-        name: 'AlgoViz',
-        short_name: 'AlgoViz',
-        description: 'Visual algorithm playground for learning and teaching',
-        theme_color: '#020617',
-        background_color: '#020617',
-        display: 'standalone',
-        icons: [
-          {
-            src: 'icons.svg',
-            sizes: '512x512',
-            type: 'image/svg+xml',
-            purpose: 'any',
-          },
-        ],
-      },
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,woff2,png,webp}'],
-        navigateFallback: `${(process.env.VITE_BASE_PATH ?? '/algoritmos/').replace(/\/?$/, '/')}index.html`,
-      },
-    }),
-  ],
+  plugins: [react(), tailwindcss()],
   build: {
     outDir: 'dist',
     rollupOptions: {
