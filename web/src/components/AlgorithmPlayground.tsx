@@ -1,17 +1,20 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { getDemo } from '../algorithms/registry';
 import type { AlgorithmDemo, CatalogEntry, DemoInput } from '../types/demo';
 import { runTestCases } from '../engine/TestRunner';
 import { usePlaybackStore } from '../engine/playbackStore';
-import { PlaybackControls } from './PlaybackControls';
+import { getDemoAsync } from '../lib/demoLoader';
+import { buildAlgoShareUrl } from '../lib/shareUrl';
+import { downloadBlob, exportSceneGif, sampleStepIndices } from '../lib/exportGif';
+import { parseArrayParam } from '../lib/urls';
+import { usePlaybackKeyboard } from '../hooks/usePlaybackKeyboard';
+import { MainPlaybackControls } from './MainPlaybackControls';
 import { StepCaptionPanel } from './StepCaptionPanel';
 import { ProgressStrip } from './ProgressStrip';
 import { Legend } from './Legend';
 import { DemoInputPanel } from './DemoInputPanel';
 import { SceneRenderer } from '../visualizers/SceneRenderer';
-import { appUrl, parseArrayParam } from '../lib/urls';
 
 interface AlgorithmPlaygroundProps {
   entry: CatalogEntry;
@@ -20,12 +23,33 @@ interface AlgorithmPlaygroundProps {
 export function AlgorithmPlayground({ entry }: AlgorithmPlaygroundProps) {
   const { t } = useTranslation(['common', 'algorithms']);
   const [searchParams] = useSearchParams();
-  const demo = getDemo(entry.id);
+  const [demo, setDemo] = useState<AlgorithmDemo<DemoInput, unknown> | null>(null);
+  const [demoLoading, setDemoLoading] = useState(true);
   const load = usePlaybackStore((s) => s.load);
+  const goTo = usePlaybackStore((s) => s.goTo);
+  const steps = usePlaybackStore((s) => s.steps);
+  const speedMs = usePlaybackStore((s) => s.speedMs);
   const scene = usePlaybackStore((s) => s.getScene());
   const [testResults, setTestResults] = useState<ReturnType<typeof runTestCases> | null>(null);
   const [copied, setCopied] = useState(false);
+  const [exporting, setExporting] = useState(false);
   const [input, setInput] = useState<DemoInput | null>(null);
+  const sceneRef = useRef<HTMLDivElement>(null);
+
+  usePlaybackKeyboard(usePlaybackStore);
+
+  useEffect(() => {
+    let cancelled = false;
+    setDemoLoading(true);
+    getDemoAsync(entry.id).then((loaded) => {
+      if (cancelled) return;
+      setDemo((loaded as AlgorithmDemo<DemoInput, unknown>) ?? null);
+      setDemoLoading(false);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [entry.id]);
 
   const resolvedInput = useMemo(() => {
     if (input) return input;
@@ -46,9 +70,17 @@ export function AlgorithmPlayground({ entry }: AlgorithmPlaygroundProps) {
   useEffect(() => {
     if (!demo || !resolvedInput) return;
     const initial = demo.buildInitialScene(resolvedInput);
-    const steps = demo.generateSteps(resolvedInput);
-    load(initial, steps);
-  }, [demo, load, resolvedInput]);
+    const demoSteps = demo.generateSteps(resolvedInput);
+    load(initial, demoSteps);
+
+    const stepParam = searchParams.get('step');
+    if (stepParam) {
+      const stepIndex = Number(stepParam);
+      if (!Number.isNaN(stepIndex) && stepIndex >= 0) {
+        requestAnimationFrame(() => goTo(stepIndex));
+      }
+    }
+  }, [demo, goTo, load, resolvedInput, searchParams]);
 
   const problemText = useMemo(() => {
     const specific = t(`${entry.id}.problem`, { ns: 'algorithms', defaultValue: '' });
@@ -56,30 +88,52 @@ export function AlgorithmPlayground({ entry }: AlgorithmPlaygroundProps) {
     return t('genericProblem', { name: entry.name });
   }, [entry.id, entry.name, t]);
 
+  if (demoLoading) {
+    return <p className="text-slate-400">{t('loadingDemo')}</p>;
+  }
+
   if (!demo) return null;
 
   const runTests = () => setTestResults(runTestCases(demo));
   const passed = testResults?.filter((r) => r.passed).length ?? 0;
 
   const copyLink = async () => {
-    await navigator.clipboard.writeText(appUrl(`/algo/${entry.id}`));
+    const currentIndex = usePlaybackStore.getState().currentIndex;
+    await navigator.clipboard.writeText(buildAlgoShareUrl(entry.id, resolvedInput, currentIndex));
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const exportGif = async () => {
+    if (!sceneRef.current || steps.length === 0 || exporting) return;
+    setExporting(true);
+    try {
+      usePlaybackStore.getState().pause();
+      const indices = sampleStepIndices(steps.length);
+      const blob = await exportSceneGif(sceneRef.current, indices, (index) => goTo(index), speedMs);
+      downloadBlob(blob, `${entry.id}-demo.gif`);
+    } finally {
+      setExporting(false);
+    }
+  };
+
   return (
     <div className="space-y-3">
-      <PlaybackControls />
+      <MainPlaybackControls />
+      <p className="text-xs text-slate-500">{t('keyboardHint')}</p>
       <div className="grid gap-3 lg:grid-cols-[220px_1fr_200px]">
         <DemoInputPanel
           entry={entry}
-          demo={demo as AlgorithmDemo<DemoInput, unknown>}
+          demo={demo}
           onApply={(next) => {
             setInput(next);
             setTestResults(null);
           }}
         />
-        <div className="relative min-h-[340px] overflow-hidden rounded-xl border border-slate-700/60 bg-slate-950 lg:col-span-1">
+        <div
+          ref={sceneRef}
+          className="relative min-h-[340px] overflow-hidden rounded-xl border border-slate-700/60 bg-slate-950 lg:col-span-1"
+        >
           <SceneRenderer scene={scene} visualFamily={entry.visualFamily} />
         </div>
         <Legend />
@@ -100,6 +154,14 @@ export function AlgorithmPlayground({ entry }: AlgorithmPlaygroundProps) {
           className="rounded-lg bg-slate-700 px-3 py-1.5 text-sm hover:bg-slate-600"
         >
           {copied ? t('copied') : t('shareLink')}
+        </button>
+        <button
+          type="button"
+          onClick={exportGif}
+          disabled={exporting || steps.length === 0}
+          className="rounded-lg bg-slate-700 px-3 py-1.5 text-sm hover:bg-slate-600 disabled:opacity-50"
+        >
+          {exporting ? t('exportingGif') : t('exportGif')}
         </button>
         {testResults && (
           <span className={`text-sm ${passed === testResults.length ? 'text-emerald-400' : 'text-red-400'}`}>
@@ -142,9 +204,5 @@ export function PlannedPreview({ entry }: { entry: CatalogEntry }) {
 }
 
 export function AlgorithmPageContent({ entry }: { entry: CatalogEntry }) {
-  const demo = getDemo(entry.id);
-  if (demo) {
-    return <AlgorithmPlayground entry={entry} />;
-  }
-  return <PlannedPreview entry={entry} />;
+  return <AlgorithmPlayground entry={entry} />;
 }

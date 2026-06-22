@@ -31,6 +31,18 @@ Output: `web/dist/` (includes `404.html` for SPA routing on GitHub Pages).
 npm test
 ```
 
+537 tests (one per catalog entry).
+
+## Features
+
+- **268 interactive demos** with step-by-step animation
+- **Compare mode** at `/compare` (two algorithms, same input)
+- **Shareable URLs** with input and step (`?data=&step=&lang=`)
+- **Export GIF** from any demo page
+- **PWA** installable for offline cache after first visit
+- **Keyboard shortcuts**: Space, arrows, R, Home
+- **i18n**: English default, Spanish toggle
+
 ## GitHub Pages
 
 - Repository: `pablogventura/algoritmos` (project site)
@@ -45,3 +57,4 @@ npm test
 4. Set `status: ready` in catalog (or update `READY_IDS` in `scripts/generate-catalog.ts`).
 5. Add step strings to `web/src/locales/en/steps.json` and `es/steps.json` (handcrafted); bulk uses `steps.generic.*`.
 6. Run `npm test` (537 tests, one per catalog entry).
+7. See [`web/CONTRIBUTING.md`](web/CONTRIBUTING.md) and `npx tsx scripts/new-demo.ts <id>`.

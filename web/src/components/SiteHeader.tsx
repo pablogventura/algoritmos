@@ -15,6 +15,9 @@ export function SiteHeader() {
           <Link to="/" className="text-sm text-slate-400 hover:text-slate-200">
             {t('nav.home')}
           </Link>
+          <Link to="/compare" className="text-sm text-slate-400 hover:text-slate-200">
+            {t('common.compareNav')}
+          </Link>
           <LanguageSwitcher />
         </nav>
       </div>

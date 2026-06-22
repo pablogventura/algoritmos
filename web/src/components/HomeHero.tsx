@@ -1,14 +1,12 @@
 import { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { getDemo } from '../algorithms/registry';
+import { quicksortDemo } from '../algorithms/sorting/quicksort';
 import { usePlaybackStore } from '../engine/playbackStore';
-import { SceneRenderer } from '../visualizers/SceneRenderer';
 import { ArrayBars } from '../visualizers/ArrayBars/ArrayBars';
 
 export function HomeHero() {
   const { t } = useTranslation('common');
-  const demo = getDemo('quicksort');
   const load = usePlaybackStore((s) => s.load);
   const play = usePlaybackStore((s) => s.play);
   const currentIndex = usePlaybackStore((s) => s.currentIndex);
@@ -17,22 +15,21 @@ export function HomeHero() {
   const scene = usePlaybackStore((s) => s.getScene());
 
   useEffect(() => {
-    if (!demo) return;
-    const initial = demo.buildInitialScene(demo.defaultInput);
-    const demoSteps = demo.generateSteps(demo.defaultInput);
+    const initial = quicksortDemo.buildInitialScene(quicksortDemo.defaultInput);
+    const demoSteps = quicksortDemo.generateSteps(quicksortDemo.defaultInput);
     load(initial, demoSteps);
     play();
-  }, [demo, load, play]);
+  }, [load, play]);
 
   useEffect(() => {
-    if (!demo || isPlaying || steps.length === 0) return;
+    if (isPlaying || steps.length === 0) return;
     if (currentIndex >= steps.length - 1) {
-      const initial = demo.buildInitialScene(demo.defaultInput);
-      const demoSteps = demo.generateSteps(demo.defaultInput);
+      const initial = quicksortDemo.buildInitialScene(quicksortDemo.defaultInput);
+      const demoSteps = quicksortDemo.generateSteps(quicksortDemo.defaultInput);
       load(initial, demoSteps);
       play();
     }
-  }, [currentIndex, demo, isPlaying, load, play, steps.length]);
+  }, [currentIndex, isPlaying, load, play, steps.length]);
 
   const arrayScene = useMemo(() => (scene?.kind === 'array' ? scene : null), [scene]);
 
@@ -51,7 +48,7 @@ export function HomeHero() {
         </Link>
       </div>
       <div className="h-44 rounded-xl border border-slate-800 bg-slate-950/80">
-        {arrayScene ? <ArrayBars scene={arrayScene} /> : <SceneRenderer scene={scene} visualFamily="array-bars" />}
+        {arrayScene ? <ArrayBars scene={arrayScene} /> : null}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import type { ArrayScene } from '../../types/demo';
 import { HIGHLIGHT_COLORS, POINTER_COLORS } from '../shared/colors';
 
@@ -8,6 +8,7 @@ interface ArrayBarsProps {
 
 export function ArrayBars({ scene }: ArrayBarsProps) {
   const maxVal = Math.max(...scene.values, 1);
+  const reduceMotion = useReducedMotion();
 
   return (
     <div className="flex h-full min-h-[280px] w-full flex-col items-center justify-end gap-4 p-4">
@@ -24,7 +25,11 @@ export function ArrayBars({ scene }: ArrayBarsProps) {
                   height: `${Math.max(heightPct, 4)}%`,
                   backgroundColor: HIGHLIGHT_COLORS[highlight] ?? HIGHLIGHT_COLORS.default,
                 }}
-                transition={{ type: 'spring', stiffness: 300, damping: 28 }}
+                transition={
+                  reduceMotion
+                    ? { duration: 0 }
+                    : { type: 'spring', stiffness: 300, damping: 28 }
+                }
               />
               <span className="text-[10px] text-slate-400">{value}</span>
             </div>

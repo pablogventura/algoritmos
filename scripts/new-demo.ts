@@ -1,55 +1,79 @@
 #!/usr/bin/env npx tsx
 /**
  * Scaffold a new handcrafted demo stub.
- * Usage: npx tsx scripts/new-demo.ts my-algorithm array-bars
+ * Usage: npx tsx scripts/new-demo.ts my-algorithm sorting array-bars
  */
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const id = process.argv[2];
-const family = process.argv[3] ?? 'array-bars';
+const root = path.join(__dirname, '..');
 
+const [id, area = 'sorting', visualFamily = 'array-bars'] = process.argv.slice(2);
 if (!id) {
-  console.error('Usage: npx tsx scripts/new-demo.ts <algorithm-id> [visual-family]');
+  console.error('Usage: npx tsx scripts/new-demo.ts <id> [area] [visualFamily]');
   process.exit(1);
 }
 
-const camel = id.replace(/-([a-z])/g, (_, c: string) => c.toUpperCase());
-const demoName = `${camel}Demo`;
-const target = path.join(__dirname, '..', 'web', 'src', 'algorithms', 'stubs', `${id}.ts`);
+const pascal = id
+  .split('-')
+  .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+  .join('');
 
-const stub = `import type { AlgorithmDemo } from '../../types/demo';
+const demoVar = `${id.replace(/-/g, '')}Demo`;
+const outDir = path.join(root, 'web', 'src', 'algorithms', area);
+const outFile = path.join(outDir, `${id}.ts`);
+
+if (fs.existsSync(outFile)) {
+  console.error(`File already exists: ${outFile}`);
+  process.exit(1);
+}
+
+fs.mkdirSync(outDir, { recursive: true });
+
+const template = `import type { AlgorithmDemo } from '../../types/demo';
 import { arrayStep } from '../shared/arraySteps';
 
-export const ${demoName}: AlgorithmDemo = {
+interface ${pascal}Input {
+  values: number[];
+}
+
+export const ${demoVar}: AlgorithmDemo<${pascal}Input, number[]> = {
   id: '${id}',
-  visualFamily: '${family}',
-  metadata: { timeComplexity: 'O(n)', spaceComplexity: 'O(1)' },
-  defaultInput: { values: [3, 1, 4, 1, 5] },
+  defaultInput: { values: [5, 2, 8, 1, 9] },
+  metadata: {
+    timeComplexity: 'O(n)',
+    spaceComplexity: 'O(1)',
+  },
   buildInitialScene(input) {
-    return { kind: 'array', values: [...(input as { values: number[] }).values], highlights: {}, pointers: {} };
+    return {
+      kind: 'array',
+      values: [...input.values],
+      highlights: {},
+      pointers: {},
+    };
   },
   generateSteps(input) {
-    const values = [...(input as { values: number[] }).values];
-    return [
-      arrayStep(values, {}, {}, 'steps.generic.start', { name: '${id}' }),
-      arrayStep(values, {}, {}, 'steps.generic.done', { name: '${id}', summary: 'done' }),
+    const arr = [...input.values];
+    const steps = [
+      arrayStep(arr, {}, {}, 'steps.generic.start', { name: '${pascal}' }),
+      arrayStep(arr, {}, {}, 'steps.generic.done', { name: '${pascal}', summary: arr.join(',') }),
     ];
+    return steps;
   },
   run(input) {
-    return { values: [...(input as { values: number[] }).values] };
+    return [...input.values].sort((a, b) => a - b);
   },
-  testCases: [{ name: 'default', input: { values: [1, 2, 3] }, expected: { values: [1, 2, 3] } }],
+  testCases: [{ name: 'default', input: { values: [3, 1, 2] }, expected: [1, 2, 3] }],
 };
 `;
 
-fs.mkdirSync(path.dirname(target), { recursive: true });
-if (fs.existsSync(target)) {
-  console.error(`Already exists: ${target}`);
-  process.exit(1);
-}
-fs.writeFileSync(target, stub);
-console.log(`Created ${target}`);
-console.log(`Next: register in web/src/algorithms/handcrafted/index.ts and add steps to locales.`);
+fs.writeFileSync(outFile, template);
+console.log(`Created ${outFile}`);
+console.log(`Next steps:`);
+console.log(`  1. Implement generateSteps and run()`);
+console.log(`  2. Register in web/src/algorithms/handcrafted/index.ts`);
+console.log(`  3. Add steps.generic or custom keys to locales/en|es/steps.json`);
+console.log(`  4. Set visualFamily ${visualFamily} in catalog if needed`);
+console.log(`  5. npm test`);
