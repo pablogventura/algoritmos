@@ -1,0 +1,15 @@
+{
+  "patrones-algoritmicos": "Patrones algorítmicos",
+  "ordenamiento-busqueda-seleccion": "Ordenamiento, búsqueda y selección",
+  "estructuras-de-datos": "Estructuras de datos",
+  "grafos": "Grafos",
+  "strings-parsing-automatas": "Strings, parsing y autómatas",
+  "logica-sat-csp": "Lógica, SAT y CSP",
+  "compresion-codificacion": "Compresión y codificación",
+  "criptografia-seguridad": "Criptografía y seguridad",
+  "numericos-algebra-lineal": "Numéricos y álgebra lineal",
+  "optimizacion": "Optimización",
+  "aprendizaje-automatico": "Aprendizaje automático",
+  "sistemas-operativos-concurrencia": "Sistemas operativos y concurrencia",
+  "bases-de-datos": "Bases de datos"
+}

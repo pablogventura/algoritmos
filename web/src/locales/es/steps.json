@@ -1,0 +1,43 @@
+{
+  "binarySearch": {
+    "start": "Buscar objetivo {{target}} en {{n}} elementos ordenados",
+    "compare": "Comparar mid={{mid}} (valor {{value}}) con objetivo {{target}}",
+    "found": "Objetivo encontrado en índice {{mid}} (valor {{value}})",
+    "right": "Objetivo mayor; descartar izquierda, left ← {{nextLeft}}",
+    "left": "Objetivo menor; descartar derecha, right ← {{nextRight}}",
+    "notFound": "Objetivo {{target}} no encontrado"
+  },
+  "quicksort": {
+    "start": "Quicksort sobre {{n}} elementos",
+    "choosePivot": "Elegir pivote en índice {{index}} (valor {{value}})",
+    "compare": "Comparar A[{{j}}]={{value}} con pivote {{pivot}}",
+    "swap": "Intercambiar índices {{i}} y {{j}}",
+    "pivotPlaced": "Colocar pivote en índice {{index}} (valor {{value}})",
+    "done": "Arreglo ordenado"
+  },
+  "mergesort": {
+    "start": "Mergesort sobre {{n}} elementos",
+    "split": "Dividir rango [{{left}}..{{right}}] en mid={{mid}}",
+    "mergeStart": "Mezclar subarreglos [{{left}}..{{mid}}] y [{{mid}}+1..{{right}}]",
+    "compare": "Comparar {{leftVal}} y {{rightVal}}",
+    "merged": "Segmento mezclado [{{left}}..{{right}}]",
+    "done": "Arreglo ordenado"
+  },
+  "bfs": {
+    "start": "BFS desde nodo {{start}}",
+    "dequeue": "Visitar nodo {{node}}",
+    "enqueue": "Encolar vecino {{to}} desde {{from}}",
+    "done": "Orden BFS: {{order}}"
+  },
+  "dijkstra": {
+    "start": "Dijkstra desde {{start}}",
+    "select": "Seleccionar nodo {{node}} con distancia {{dist}}",
+    "relax": "Relajar arista {{from}}→{{to}} (w={{weight}}), nueva dist[{{to}}]={{newDist}}",
+    "done": "Distancias mínimas desde {{start}} calculadas"
+  },
+  "prim": {
+    "start": "MST Prim desde {{start}}",
+    "addEdge": "Agregar arista {{from}}—{{to}} (peso {{weight}}) al MST",
+    "done": "MST completo, peso total {{totalWeight}}"
+  }
+}

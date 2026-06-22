@@ -1,0 +1,11 @@
+{
+  "compare": "Comparing",
+  "active": "Active range",
+  "sorted": "Sorted",
+  "found": "Found",
+  "pivot": "Pivot",
+  "visited": "Visited",
+  "frontier": "In queue",
+  "path": "Relaxed edge",
+  "mst": "MST edge"
+}

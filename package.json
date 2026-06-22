@@ -1,0 +1,11 @@
+{
+  "name": "algoritmos",
+  "private": true,
+  "scripts": {
+    "catalog": "tsx scripts/generate-catalog.ts",
+    "validate-catalog": "tsx scripts/validate-catalog.ts",
+    "dev": "npm run catalog && npm run dev --prefix web",
+    "build": "npm run catalog && npm run validate-catalog && npm run build --prefix web",
+    "test": "npm run test --prefix web"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "binary-search": {
+    "problem": "Encontrar el índice de un valor objetivo en un arreglo ordenado."
+  },
+  "quicksort": {
+    "problem": "Ordenar un arreglo usando partición divide y vencerás."
+  },
+  "mergesort": {
+    "problem": "Ordenar un arreglo mezclando recursivamente mitades ordenadas."
+  },
+  "bfs": {
+    "problem": "Recorrer un grafo nivel por nivel desde un nodo inicial."
+  },
+  "dijkstra": {
+    "problem": "Calcular caminos mínimos desde una fuente en un grafo ponderado."
+  },
+  "prim": {
+    "problem": "Construir un árbol generador mínimo creciendo desde un nodo inicial."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "play": "Reproducir",
+  "pause": "Pausar",
+  "reset": "Reiniciar",
+  "stepForward": "Avanzar paso",
+  "stepBack": "Retroceder paso",
+  "speed": "Velocidad",
+  "noStep": "Presioná Play o Step para comenzar",
+  "stepLabel": "Paso {{current}} / {{total}}"
+}

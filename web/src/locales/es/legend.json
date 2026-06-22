@@ -1,0 +1,11 @@
+{
+  "compare": "Comparación",
+  "active": "Rango activo",
+  "sorted": "Ordenado",
+  "found": "Encontrado",
+  "pivot": "Pivote",
+  "visited": "Visitado",
+  "frontier": "En cola",
+  "path": "Arista relajada",
+  "mst": "Arista MST"
+}

@@ -1,0 +1,29 @@
+{
+  "siteName": "AlgoViz",
+  "tagline": "Playground visual de algoritmos para aprender y enseñar",
+  "searchPlaceholder": "Buscar algoritmos…",
+  "legend": "Leyenda",
+  "status": {
+    "ready": "Interactivo",
+    "draft": "Borrador",
+    "planned": "Próximamente"
+  },
+  "progress": "{{ready}} interactivos · {{total}} en total",
+  "areaProgress": "{{ready}} / {{total}} listos",
+  "runTests": "Ejecutar tests",
+  "testsPassed": "{{passed}} / {{total}} OK",
+  "shareLink": "Copiar enlace",
+  "copied": "¡Copiado!",
+  "plannedTitle": "Demo visual próximamente",
+  "plannedBody": "Este algoritmo usará: {{metaphor}}",
+  "complexity": "Complejidad",
+  "time": "Tiempo",
+  "space": "Espacio",
+  "problem": "Problema",
+  "visualFamily": "Visualizador",
+  "noResults": "No se encontraron algoritmos",
+  "footer": "Hecho para estudiantes y docentes",
+  "nav": {
+    "home": "Inicio"
+  }
+}

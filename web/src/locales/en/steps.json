@@ -1,0 +1,43 @@
+{
+  "binarySearch": {
+    "start": "Search target {{target}} in {{n}} sorted elements",
+    "compare": "Compare mid={{mid}} (value {{value}}) with target {{target}}",
+    "found": "Found target at index {{mid}} (value {{value}})",
+    "right": "Target is larger; discard left side, left ← {{nextLeft}}",
+    "left": "Target is smaller; discard right side, right ← {{nextRight}}",
+    "notFound": "Target {{target}} not found"
+  },
+  "quicksort": {
+    "start": "Quicksort on {{n}} elements",
+    "choosePivot": "Choose pivot at index {{index}} (value {{value}})",
+    "compare": "Compare A[{{j}}]={{value}} with pivot {{pivot}}",
+    "swap": "Swap indices {{i}} and {{j}}",
+    "pivotPlaced": "Place pivot at index {{index}} (value {{value}})",
+    "done": "Array sorted"
+  },
+  "mergesort": {
+    "start": "Mergesort on {{n}} elements",
+    "split": "Split range [{{left}}..{{right}}] at mid={{mid}}",
+    "mergeStart": "Merge subarrays [{{left}}..{{mid}}] and [{{mid}}+1..{{right}}]",
+    "compare": "Compare {{leftVal}} and {{rightVal}}",
+    "merged": "Merged segment [{{left}}..{{right}}]",
+    "done": "Array sorted"
+  },
+  "bfs": {
+    "start": "BFS from node {{start}}",
+    "dequeue": "Visit node {{node}}",
+    "enqueue": "Enqueue neighbor {{to}} from {{from}}",
+    "done": "BFS order: {{order}}"
+  },
+  "dijkstra": {
+    "start": "Dijkstra from {{start}}",
+    "select": "Select node {{node}} with distance {{dist}}",
+    "relax": "Relax edge {{from}}→{{to}} (w={{weight}}), new dist[{{to}}]={{newDist}}",
+    "done": "Shortest distances from {{start}} computed"
+  },
+  "prim": {
+    "start": "Prim MST from {{start}}",
+    "addEdge": "Add edge {{from}}—{{to}} (weight {{weight}}) to MST",
+    "done": "MST complete, total weight {{totalWeight}}"
+  }
+}

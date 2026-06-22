@@ -1,0 +1,10 @@
+{
+  "play": "Play",
+  "pause": "Pause",
+  "reset": "Reset",
+  "stepForward": "Step forward",
+  "stepBack": "Step back",
+  "speed": "Speed",
+  "noStep": "Press Play or Step to begin",
+  "stepLabel": "Step {{current}} / {{total}}"
+}
