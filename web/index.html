@@ -10,6 +10,38 @@
     <title>AlgoViz</title>
   </head>
   <body>
+    <script>
+      (function () {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.addEventListener('message', function (event) {
+            if (event.data && event.data.type === 'SW_RELOAD') {
+              window.location.reload();
+            }
+          });
+          navigator.serviceWorker.getRegistrations().then(function (registrations) {
+            if (registrations.length === 0) return;
+            Promise.all(
+              registrations.map(function (registration) {
+                return registration.unregister();
+              }),
+            )
+              .then(function () {
+                if (!('caches' in window)) return;
+                return caches.keys().then(function (keys) {
+                  return Promise.all(
+                    keys.map(function (key) {
+                      return caches.delete(key);
+                    }),
+                  );
+                });
+              })
+              .then(function () {
+                window.location.reload();
+              });
+          });
+        }
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

@@ -1,5 +1,4 @@
 // One-shot service worker: clears Workbox caches and unregisters itself.
-// Deployed after a broken PWA cache so existing clients can recover without manual reset.
 self.addEventListener('install', () => {
   self.skipWaiting();
 });
@@ -12,7 +11,12 @@ self.addEventListener('activate', (event) => {
       await self.registration.unregister();
       const clients = await self.clients.matchAll({ type: 'window' });
       for (const client of clients) {
-        client.navigate(client.url);
+        client.postMessage({ type: 'SW_RELOAD' });
+        try {
+          await client.navigate(client.url);
+        } catch {
+          // navigate() may fail; postMessage + inline listener reloads the page.
+        }
       }
     })(),
   );
